@@ -1,0 +1,50 @@
+body {
+    position: relative;
+}
+
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+    color: #000;
+}
+
+.navbarVertival{
+    padding: 2rem;
+    width: 6rem;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.containerIntro{
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 6rem;
+}
+
+.button_toggler{
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.contacto{
+    list-style: none;
+}
+
+.contacto li a{
+    color: black;
+    text-decoration: none;
+}
+
+@media(min-device-width: 768px){
+    .sendMessage{
+        display: none;
+    }
+}
