@@ -1,13 +1,13 @@
 @font-face {
   font-family: HelveticaLT;
-	src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.ttf") format("truetype"),
-	url("Helvetica_LT_Std/HelveticaLTStd-Bold.ttf") format("truetype"),
-	url("Helvetica_LT_Std/HelveticaLTStd-Light.ttf") format("truetype"),
-  url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.ttf") format("truetype");
+	src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"),
+	url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"),
+	url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"),
+  url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.otf") format("opentype");
 }
 
 body {
-    position: relative;
+    font-family: HelveticaLT;
 }
 
 
@@ -22,11 +22,10 @@ body {
     padding: 2rem;
     width: 6rem;
     height: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    font-family: HelveticaLT;
     background-color: #FDED00;
 }
 
@@ -48,12 +47,9 @@ body {
   font-size: 100%;
   background-color: #000;
   color: white;
-  font-family: HelveticaLT;
   position: relative;
 }
 .contacto{
-
-    font-family: HelveticaLT;
     list-style: none;
 }
 
