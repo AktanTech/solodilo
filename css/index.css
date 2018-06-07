@@ -1,16 +1,13 @@
 @font-face {
-  font-family: HelveticaLT;
-	src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"),
-	url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"),
-	url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"),
-  url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.otf") format("opentype");
+    font-family: HelveticaLT;
+    src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.otf") format("opentype");
 }
 
 body {
     font-family: HelveticaLT;
 }
 
-.logo{
+.logo {
     width: 6rem;
 }
 
@@ -21,7 +18,7 @@ body {
     color: #000;
 }
 
-.navbarVertival{
+.navbarVertival {
     box-shadow: 1px 1px 1px gray;
     width: 6rem;
     height: 100%;
@@ -32,13 +29,23 @@ body {
     background-color: #FDED00;
 }
 
-.containerIntro{
+.bootstrap-vertical-nav{
+    color: black;
+    font-size: 20px;
+    padding: 2rem;
+}
+
+.bootstrap-vertical-nav ul li a{
+    color: black;
+}
+
+.containerIntro {
     padding-top: 0;
     margin-top: 0;
     padding-left: 6rem;
 }
 
-.button_toggler{
+.button_toggler {
     margin: 2rem;
     width: 32px;
     height: 32px;
@@ -47,31 +54,35 @@ body {
     border: 1px solid black;
 }
 
-#contacto{
-  font-size: 100%;
-  background-color: #000;
-  color: white;
-  position: relative;
+#contacto {
+    background-color: #000;
+    color: white;
 }
-.contacto{
+
+.contacto {
+    margin: 0;
+    padding: 8px;
     list-style: none;
 }
 
-.contacto li a{
+.contacto li a {
     font-family: HelveticaLT;
     color: white;
     text-decoration: none;
 }
 
+.nav-link{
+    color: black;
+}
 
-@media(min-device-width: 768px){
-    .sendMessage{
+@media(min-device-width: 768px) {
+    .sendMessage {
         display: none;
     }
 }
 
-@media(max-device-width: 768px){
-    .numberWhats{
+@media(max-device-width: 768px) {
+    .numberWhats {
         display: none;
     }
 }
