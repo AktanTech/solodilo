@@ -10,6 +10,9 @@ body {
     font-family: HelveticaLT;
 }
 
+.logo{
+    width: 6rem;
+}
 
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover,
@@ -19,7 +22,7 @@ body {
 }
 
 .navbarVertival{
-    padding: 2rem;
+    box-shadow: 1px 1px 1px gray;
     width: 6rem;
     height: 100%;
     position: fixed;
@@ -36,6 +39,7 @@ body {
 }
 
 .button_toggler{
+    margin: 2rem;
     width: 32px;
     height: 32px;
     border-radius: 4px;
@@ -62,6 +66,12 @@ body {
 
 @media(min-device-width: 768px){
     .sendMessage{
+        display: none;
+    }
+}
+
+@media(max-device-width: 768px){
+    .numberWhats{
         display: none;
     }
 }
