@@ -29,7 +29,7 @@ body {
 
 #contacto {
     background-color: #000;
-    color: white;
+    color: white !important;
     bottom: 0;
     position: fixed;
     z-index: 2;
@@ -39,11 +39,12 @@ body {
     margin: 0;
     padding: 8px;
     list-style: none;
+
 }
 
-.contacto li a {
+#redes>.col-xs-12>a {
     font-family: HelveticaLT;
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
