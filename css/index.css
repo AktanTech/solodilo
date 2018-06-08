@@ -30,6 +30,9 @@ body {
 #contacto {
     background-color: #000;
     color: white;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
 }
 
 .contacto {
@@ -85,5 +88,8 @@ body {
         padding-top: 0;
         margin-top: 0;
         margin-left: 0;
+    }
+    #videoContainer{
+      padding-top: 100px !important;
     }
 }
