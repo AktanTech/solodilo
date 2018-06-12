@@ -5,98 +5,41 @@
 
 body {
     font-family: HelveticaLT;
+    background-color: rgb(0, 0, 0, .9);
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialNetwrok i {
+    margin: 8px;
+    font-size: 1.5rem;
+    color: #FDED00;
+}
+
+.row {
+    margin-top: 2rem;
+    max-height: 300px;
 }
 
 .logo {
-    width: 6rem;
+    font-size: 6rem;
 }
 
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-brand:focus,
-.navbar-inverse .navbar-brand:hover {
-    color: #000;
+.enfas {
+    font-weight: bold;
+    color: #FDED00
 }
 
-.button_toggler {
-    margin: 2rem;
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
-    background-color: white;
-    border: 1px solid black;
+.soon {
+    font-weight: bold;
+    font-size: 3rem;
 }
 
-#contacto {
-    background-color: #000;
-    color: white !important;
-    bottom: 0;
-    position: fixed;
-    padding: 8px;
-    z-index: 2;
-}
-
-.contacto {
-    margin: 0;
-    padding: 8px;
-    list-style: none;
-
-}
-
-#redes>.col-xs-12>a {
-    font-family: HelveticaLT;
-    color: white !important;
-    text-decoration: none;
-}
-
-.nav-link {
-    color: black;
-}
-
-#video{
-    height: 580px;
-}
-
-#videoContainer{
-    padding:0;
-    overflow-x:hidden;
-}
-@media(min-device-width: 768px) {
-    .sendMessage {
-        display: none;
-    }
-    .navbarVertival {
-        width: 8rem;
-        height: 100%;
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        background-color: #FDED00;
-    }
-
-    .containerIntro {
-        padding-top: 0;
-        margin-top: 0;
-        padding-left: 8rem;
-    }
-}
-
-@media(max-device-width: 768px) {
-    .numberWhats {
-        display: none;
-    }
-
-    .navbarVertival {
-        width: 100%;
-        height: 4rem;
-        position: fixed;
-        background-color: #FDED00;
-    }
-
-    .containerIntro {
-        padding-top: 0;
-        margin-top: 0;
-        margin-left: 0;
-    }
+.right {
+    display: flex;
+    justify-content: flex-end;
 }
