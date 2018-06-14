@@ -5,8 +5,8 @@
 
 body {
     font-family: HelveticaLT;
-    background-color: rgba( 0, 0, 0.9) ;
-    background-image: url("../Media/imagenes/fondo-soloDilo.PNG");
+    background-color: #000000;
+    background-image: url("https://solodilo.herokuapp.com/Media/imagenes/fondo-soloDilo.png");
     color: #FFF;
 }
 
