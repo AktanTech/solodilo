@@ -28,19 +28,22 @@ body {
 
 .logo {
     font-size: 6rem;
+    line-height: 1.2;
+
 }
 
 .enfas {
     font-weight: bold;
-    color: #FDED00
+    color: #FDED00 !important;
 }
 
 .soon {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 3rem;
 }
 
-.right {
+.right, .right>a {
     display: flex;
+    color: #fff;
     justify-content: flex-end;
 }
