@@ -6,7 +6,7 @@
 body {
     font-family: HelveticaLT;
     background-color: #000000;
-    background-image: url("https://solodilo.herokuapp.com/Media/imagenes/fondo-soloDilo.png");
+    background-image: url("https://solodilo.herokuapp.com/Media/imagenes/LogoFondo.png");
     color: #FFF;
 }
 
@@ -27,23 +27,32 @@ body {
 }
 
 .logo {
-    font-size: 6rem;
+    font-size: 7rem;
     line-height: 1.2;
+    font-weight: lighter;
+}
 
+.logo > #dilo{
+  font-weight: 900;
+}
+
+#info{
+  font-size: 1.5rem;
 }
 
 .enfas {
-    font-weight: bold;
+    font-weight: bolder;
     color: #FDED00 !important;
 }
 
 .soon {
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 5rem !important;
 }
 
 .right, .right>a {
     display: flex;
+    font-size: 1.4rem;
     color: #fff;
     justify-content: flex-end;
 }
