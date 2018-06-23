@@ -1,6 +1,13 @@
 @font-face {
     font-family: HelveticaLT;
-    src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.otf") format("opentype");
+    src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-BoldCond.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-BoldCondObl.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-Cond.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.otf") format("opentype");
 }
 
 body {
@@ -46,7 +53,7 @@ body {
 }
 
 .soon {
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 5rem !important;
 }
 
