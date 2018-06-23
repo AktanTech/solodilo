@@ -4,6 +4,7 @@
     url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"),
     url("Helvetica_LT_Std/HelveticaLTStd-BoldCond.otf") format("opentype"),
     url("Helvetica_LT_Std/HelveticaLTStd-BoldCondObl.otf") format("opentype"),
+    url("Helvetica_LT_Std/HelveticaLTStd-BoldObl.otf") format("opentype"),
     url("Helvetica_LT_Std/HelveticaLTStd-Cond.otf") format("opentype"),
     url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"),
     url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"),
@@ -36,7 +37,7 @@ body {
 .logo {
     font-size: 6rem;
     line-height: 1.2;
-    font-weight: lighter;
+    font-weight: 100;
 }
 
 .logo > #dilo{
@@ -44,7 +45,7 @@ body {
 }
 
 #info{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .enfas {
