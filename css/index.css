@@ -13,7 +13,7 @@
 
 body {
     font-family: HelveticaLT;
-    background-color: #000000;
+    /* background-color: #000000; */
     background-image: url("https://solodilo.herokuapp.com/Media/imagenes/BG2.png");
     color: #FFF;
 }
