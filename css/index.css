@@ -13,7 +13,6 @@
 
 body {
     font-family: HelveticaLT;
-    /* background-color: #000000; */
     background-image: url("https://solodilo.herokuapp.com/Media/imagenes/BG2.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,18 +31,20 @@ body {
 }
 
 .row {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     max-height: 300px;
 }
 
 .logo {
     font-size: 6rem;
     line-height: 1.2;
-    font-weight: 100;
+    font-weight: lighter;
+    color: rgb(255,255,255, .75)
 }
 
 .logo > #dilo{
-  font-weight: 900;
+    font-weight: 900;
+    color: white;
 }
 
 #info{
@@ -63,8 +64,13 @@ body {
 .right, .right>a {
     display: flex;
     font-size: 1.4rem;
-    color: #fff;
+    font-weight: normal;
+    color: rgb(255,255,255, .75);
     justify-content: flex-end;
+}
+
+strong{
+    color: white;
 }
 
 @media only screen and (max-width: 500px) {
