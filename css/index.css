@@ -77,6 +77,14 @@ strong{
 }
 
 @media only screen and (max-width: 768px) {
+  .container-fluid{
+    padding-left: 2vh;
+    padding-right: 0vh;
+  }
+
+  .right, .right>a {
+    justify-content: flex-end;
+  }
   #info{
     font-size: 1.34rem;
   }
