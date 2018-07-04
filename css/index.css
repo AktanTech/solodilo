@@ -19,24 +19,27 @@ body {
     color: #FFF;
 }
 
-.container {
+.container-fluid {
     display: flex;
     flex-direction: column;
+    padding-left: 8vh;
+    padding-right: 8vh;
 }
 
 .socialNetwrok i {
-    margin: 8px;
-    font-size: 1.5rem;
+    margin: 1vh;
+    font-size: 3vh;
     color: #FDED00;
 }
 
 .row {
-    margin-top: 1.5rem;
-    max-height: 300px;
+    margin-top: 2vh;
+    max-height: 400px;
+    margin-bottom: 2vh;
 }
 
 .logo {
-    font-size: 6rem;
+    font-size: 16vh;
     line-height: 1.2;
     font-weight: lighter;
     color: rgb(255,255,255, .75)
@@ -48,7 +51,7 @@ body {
 }
 
 #info{
-  font-size: 1rem;
+  font-size: 3vh;
 }
 
 .enfas {
@@ -58,22 +61,22 @@ body {
 
 .soon {
     font-weight: 900;
-    font-size: 5rem !important;
+    font-size: 12vh !important;
 }
 
 .right, .right>a {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 3vh;
     font-weight: normal;
     color: rgb(255,255,255, .75);
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 strong{
     color: white;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   #info{
     font-size: 1.34rem;
   }
