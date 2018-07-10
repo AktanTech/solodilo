@@ -13,7 +13,7 @@
 
 body {
     font-family: HelveticaLT;
-    background-image: url("https://solodilo.herokuapp.com/Media/imagenes/BG2Compress.jpg");
+    background-image: url("../Media/imagenes/BG4.png");
     background-size: cover;
     background-repeat: no-repeat;
     color: #FFF;
@@ -28,8 +28,13 @@ body {
 
 .socialNetwrok i {
     margin: 1vh;
-    font-size: 3vh;
+    font-size: 160%;
     color: #FDED00;
+}
+
+.socialNetwrok a {
+    text-decoration: none;
+
 }
 
 .row {
@@ -42,7 +47,7 @@ body {
     font-size: 16vh;
     line-height: 1.2;
     font-weight: lighter;
-    color: rgb(255,255,255, .75)
+    color: rgb(255,255,255, .85)
 }
 
 .logo > #dilo{
@@ -52,6 +57,7 @@ body {
 
 #info{
   font-size: 3vh;
+  color: rgb(255,255,255, .85)
 }
 
 .enfas {
@@ -67,9 +73,9 @@ body {
 .right, .right>a {
     display: flex;
     font-size: 3vh;
-    font-weight: normal;
-    color: rgb(255,255,255, .75);
-    justify-content: flex-start;
+    color: rgb(255,255,255, .85);
+    justify-content: flex-end;
+    margin-right: 22px;
 }
 
 strong{
@@ -97,4 +103,19 @@ strong{
   .row{
     margin-top: 0;
   }
+}
+
+.linkWeb{
+    margin-top: -24px;
+}
+
+#footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.footerRight>a {
+    color: rgb(255,255,255, .85);
 }
