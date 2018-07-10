@@ -87,9 +87,18 @@ strong{
     padding-left: 2vh;
     padding-right: 0vh;
   }
+  .socialNetwrok i {
+    margin: 16px;
+  }
+
+  .col-12{
+      display: flex;
+      justify-content: center;
+  }
 
   .right, .right>a {
     justify-content: flex-end;
+    margin: 0;
   }
   #info{
     font-size: 1.34rem;
@@ -98,23 +107,31 @@ strong{
     font-size: 4.8rem;
   }
   .soon{
-    padding-top: 3.6rem;
+    padding-top: 1rem;
   }
   .row{
     margin-top: 0;
+  }
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
 .linkWeb{
     margin-top: -24px;
 }
-
-#footer{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
+@media only screen and (min-width: 768px) {
+    #footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+    }
 }
+
 
 .footerRight>a {
     color: rgb(255,255,255, .85);
