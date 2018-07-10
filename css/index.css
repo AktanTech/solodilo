@@ -34,7 +34,7 @@ body {
     margin-bottom: 2vh;
 }
 
-.logo {
+body:nth-of-type(1) .logo{
     font-size: 14vh;
     line-height: 1.2;
     font-weight: lighter;
@@ -60,9 +60,7 @@ body {
     font-weight: 900;
     font-size: 10vh !important;
 }
-strong{
-    margin-bottom: 1px;
-}
+
 .right,
 .right>a {
     display: flex;
