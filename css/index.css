@@ -128,18 +128,6 @@ strong {
     color: rgb(255, 255, 255, .85);
 }
 
-@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
-    .logo {
-        font-size: 16vh;
-        line-height: 1.2;
-        font-weight: lighter;
-        color: rgb(255, 255, 255, .85);
-    }
-    .soon {
-        font-weight: 900;
-        font-size: 12vh !important;
-    }
-    .footerRight>a {
-        color: rgb(255, 255, 255, .85);
-    }
-}
+_::-webkit-full-page-media, _:future, :root .safari_only .footerRight>a {
+        color: rgb(255, 255, 255, .85);  
+  }
