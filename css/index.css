@@ -47,7 +47,8 @@ body {
     font-size: 16vh;
     line-height: 1.2;
     font-weight: lighter;
-    color: rgb(255,255,255, .85)
+    color: rgb(255,255,255, .85);
+    -webkit-text-fill-color: rgb(255,255,255, .85);
 }
 
 .logo > #dilo{
@@ -56,8 +57,9 @@ body {
 }
 
 #info{
-  font-size: 3vh;
-  color: rgb(255,255,255, .85)
+  font-size: 2.5vh;
+  color: rgb(255,255,255, .85);
+  -webkit-text-fill-color: rgb(255,255,255, .85);
 }
 
 .enfas {
@@ -68,6 +70,7 @@ body {
 .soon {
     font-weight: 900;
     font-size: 12vh !important;
+    -webkit-text-stroke-width: 900;
 }
 
 .right, .right>a {
