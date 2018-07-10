@@ -1,14 +1,6 @@
 @font-face {
     font-family: HelveticaLT;
-    src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-BoldCond.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-BoldCondObl.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-BoldObl.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-Cond.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"),
-    url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.otf") format("opentype");
+    src: url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Bold.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-BoldCond.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-BoldCondObl.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-BoldObl.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Cond.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Roman.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-Light.otf") format("opentype"), url("Helvetica_LT_Std/HelveticaLTStd-UltraComp.otf") format("opentype");
 }
 
 body {
@@ -28,13 +20,12 @@ body {
 
 .socialNetwrok i {
     margin: 1vh;
-    font-size: 160%;
+    font-size: 140%;
     color: #FDED00;
 }
 
 .socialNetwrok a {
     text-decoration: none;
-
 }
 
 .row {
@@ -44,22 +35,20 @@ body {
 }
 
 .logo {
-    font-size: 16vh;
+    font-size: 14vh;
     line-height: 1.2;
     font-weight: lighter;
-    color: rgb(255,255,255, .85);
-    -webkit-text-fill-color: rgb(255,255,255, .85);
+    color: rgb(255, 255, 255, .85);
 }
 
-.logo > #dilo{
+.logo>#dilo {
     font-weight: 900;
     color: white;
 }
 
-#info{
-  font-size: 2.5vh;
-  color: rgb(255,255,255, .85);
-  -webkit-text-fill-color: rgb(255,255,255, .85);
+#info {
+    font-size: 2.5vh;
+    color: rgb(255, 255, 255, .85);
 }
 
 .enfas {
@@ -69,65 +58,67 @@ body {
 
 .soon {
     font-weight: 900;
-    font-size: 12vh !important;
-    -webkit-text-stroke-width: 900;
+    font-size: 10vh !important;
 }
-
-.right, .right>a {
+strong{
+    margin-bottom: 1px;
+}
+.right,
+.right>a {
     display: flex;
     font-size: 3vh;
-    color: rgb(255,255,255, .85);
+    color: rgb(255, 255, 255, .85);
     justify-content: flex-end;
     margin-right: 22px;
 }
 
-strong{
+strong {
     color: white;
 }
 
 @media only screen and (max-width: 768px) {
-  .container-fluid{
-    padding-left: 2vh;
-    padding-right: 0vh;
-  }
-  .socialNetwrok i {
-    margin: 16px;
-  }
-
-  .col-12{
-      display: flex;
-      justify-content: center;
-  }
-
-  .right, .right>a {
-    justify-content: flex-end;
-    margin: 0;
-  }
-  #info{
-    font-size: 1.34rem;
-  }
-  .logo{
-    font-size: 4.8rem;
-  }
-  .soon{
-    padding-top: 1rem;
-  }
-  .row{
-    margin-top: 0;
-  }
-  #footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+    .container-fluid {
+        padding-left: 2vh;
+        padding-right: 0vh;
+    }
+    .socialNetwrok i {
+        margin: 16px;
+    }
+    .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+    .right,
+    .right>a {
+        justify-content: flex-end;
+        margin: 0;
+    }
+    #info {
+        font-size: 1.34rem;
+    }
+    .logo {
+        font-size: 4.8rem;
+    }
+    .soon {
+        padding-top: 1rem;
+    }
+    .row {
+        margin-top: 0;
+    }
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
-.linkWeb{
+.linkWeb {
     margin-top: -24px;
 }
+
 @media only screen and (min-width: 768px) {
-    #footer{
+    #footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -135,7 +126,22 @@ strong{
     }
 }
 
-
 .footerRight>a {
-    color: rgb(255,255,255, .85);
+    color: rgb(255, 255, 255, .85);
+}
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+    .logo {
+        font-size: 16vh;
+        line-height: 1.2;
+        font-weight: lighter;
+        color: rgb(255, 255, 255, .85);
+    }
+    .soon {
+        font-weight: 900;
+        font-size: 12vh !important;
+    }
+    .footerRight>a {
+        color: rgb(255, 255, 255, .85);
+    }
 }
