@@ -7,9 +7,9 @@
 
 /*global $:false */
 /*global window: false */
-(function() {
+(function () {
     "use strict";
-    $(function($) {
+    $(function ($) {
 
 
 
@@ -26,8 +26,8 @@
 
 
         /*Equal Heights JS by Designova*/
-        $.fn.setAllToMaxHeight = function() {
-            return this.css({ 'height': '' }).height(Math.max.apply(this, $.map(this, function(e) { return $(e).height() })));
+        $.fn.setAllToMaxHeight = function () {
+            return this.css({ 'height': '' }).height(Math.max.apply(this, $.map(this, function (e) { return $(e).height() })));
         }
         $('.eq-height1').setAllToMaxHeight();
         $('.eq-height2').setAllToMaxHeight();
@@ -38,7 +38,7 @@
         //PRELOADER
         $('body, html').addClass('preloader-running');
         $('#mastwrap').css('visibility', 'hidden');
-        $(window).load(function() {
+        $(window).load(function () {
             $("#status").fadeOut();
             $("#preloader").delay(1000).fadeOut(1000);
             $('body, html').removeClass('preloader-running');
@@ -48,31 +48,32 @@
         });
 
         //Sub Menu Trigger
-        $('.main-menu li a.sub-menu-trigger').on('mouseenter', function() {
+        $('.main-menu li a.sub-menu-trigger').on('mouseenter', function () {
             $(this).next('.sub-menu').stop().slideDown(1000);
         });
-        $('.main-menu li').on('mouseleave', function() {
+        $('.main-menu li').on('mouseleave', function () {
             $('.sub-menu').stop().slideUp(1000);
         });
 
 
         //Main Menu Trigger
-        (function($) {
-            $.fn.menuPanelTrigger = function() {
+        (function ($) {
+            $.fn.menuPanelTrigger = function () {
                 if ($(".mastnav").is(":hidden")) {
                     $('.mastnav').fadeIn();
-                } else {
+                }
+                else {
                     $('.mastnav').fadeOut();
                 }
             };
         })(jQuery);
-        $('.menu-notification a, .menu-close-notification a').on('click', function(e) {
+        $('.menu-notification a, .menu-close-notification a').on('click', function (e) {
             e.preventDefault();
             $().menuPanelTrigger();
         });
 
         //Scrolling Sections
-        $(".scroll").on('click', function(event) {
+        $(".scroll").on('click', function (event) {
             event.preventDefault();
             $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
             $().menuPanelTrigger();
@@ -81,18 +82,20 @@
 
 
         //On-Scroll Animations
-        $(window).load(function() {
+        $(window).load(function () {
 
             if (!device.tablet() && !device.mobile()) {
 
-                $('.animated').appear(function() {
-                    $(this).each(function() {
+                $('.animated').appear(function () {
+                    $(this).each(function () {
                         $(this).css('visibility', 'visible');
                         $(this).addClass($(this).data('fx'));
                     });
                 }, { accY: -100 });
 
-            } else {
+            }
+
+            else {
                 $('.animated').css("visibility", "visible");
             }
         });
@@ -101,20 +104,21 @@
 
 
         //PORTFOLIO UX
-        (function($) {
-            $.fn.filterPanelTrigger = function() {
+        (function ($) {
+            $.fn.filterPanelTrigger = function () {
                 if ($(".works-filter-panel").is(":hidden")) {
                     $('.works-filter-panel').slideDown();
-                } else {
+                }
+                else {
                     $('.works-filter-panel').slideUp();
                 }
             };
         })(jQuery);
-        $('.filter-notification a').on('click', function(e) {
+        $('.filter-notification a').on('click', function (e) {
             e.preventDefault();
             $().filterPanelTrigger();
         });
-        $('.works-filter li a').on('click', function() {
+        $('.works-filter li a').on('click', function () {
             $('.works-filter li a').removeClass('filter-active');
             $(this).addClass('filter-active');
             return false;
@@ -123,7 +127,8 @@
 
         if ($(".works-container").length) {
             $('.filter-notification a').show();
-        } else {
+        }
+        else {
             $('.filter-notification a').hide();
         }
 
@@ -136,7 +141,7 @@
 
 
         //ISOTOPE INIT
-        $(window).load(function() {
+        $(window).load(function () {
             $container1.isotope({
                 // options
                 itemSelector: '.works-item',
@@ -144,11 +149,11 @@
                 transitionDuration: '0.8s'
             });
             //forcing a perfect masonry layout after initial load
-            setTimeout(function() {
+            setTimeout(function () {
                 $container1.isotope('layout');
             }, 100);
             // filtering
-            $('.works-filter li a').on('click', function() {
+            $('.works-filter li a').on('click', function () {
                 $('.works-filter li a').removeClass('active');
                 $(this).addClass('active');
 
@@ -156,7 +161,7 @@
                 $('.works-container').isotope({
                     filter: selector
                 });
-                setTimeout(function() {
+                setTimeout(function () {
                     $container1.isotope('layout');
                 }, 700);
                 return false;
@@ -164,12 +169,12 @@
         });
 
         //Isotope ReLayout on Window Resize event.
-        $(window).on('resize', function() {
+        $(window).on('resize', function () {
             $container1.isotope('layout');
         });
 
         //Isotope ReLayout on device orientation changes
-        window.addEventListener("orientationchange", function() {
+        window.addEventListener("orientationchange", function () {
             $container1.isotope('layout');
         }, false);
 
@@ -259,7 +264,8 @@
             dots: false,
             centerMode: false,
             focusOnSelect: true,
-            responsive: [{
+            responsive: [
+                {
                     breakpoint: 900,
                     settings: {
                         slidesToShow: 2
@@ -294,7 +300,7 @@
         if (!device.tablet() && !device.mobile()) {
 
             //Activating Parallax effect if non-mobile device is detected
-            $(window).on('load', function() {
+            $(window).on('load', function () {
                 parallaxInit();
             });
 
@@ -312,7 +318,7 @@
         ******************************************/
 
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#rev_slider_3_1').show().revolution({
                 dottedOverlay: "none",
                 delay: 9000,
@@ -419,19 +425,19 @@
 
 
             //CONTACT FORM VALIDATION
-            $(document).ready(function($) {
+            $(document).ready(function ($) {
 
                 // hide messages 
                 $(".error").hide();
                 $(".success").hide();
 
-                $('#contactForm input').on('click', function() {
+                $('#contactForm input').on('click', function () {
                     $(".error").fadeOut();
                     return false;
                 });
 
                 // on submit...
-                $("#contactForm #submit").on('click', function() {
+                $("#contactForm #submit").on('click', function () {
                     $(".error").hide();
 
                     //required:
@@ -457,10 +463,10 @@
 
                     //email (check if email entered is valid)
 
-                    if (email !== "") { // If something was entered
+                    if (email !== "") {  // If something was entered
                         if (!isValidEmailAddress(email)) {
                             $('#fmail').fadeIn('slow'); //error message
-                            $("input#email").focus(); //focus on email field
+                            $("input#email").focus();   //focus on email field
                             return false;
                         }
                     }
@@ -509,7 +515,7 @@
 
 
                 //Setup waypoints plugin
-                $('.contact').waypoint(function(direction) {
+                $('.contact').waypoint(function (direction) {
 
                     if (direction === 'down' && !map_shown) {
                         map_shown = true;
@@ -541,7 +547,9 @@
                             title: 'Snazzy!'
                         });
 
-                    } else {}
+                    }
+                    else {
+                    }
 
                 }, { offset: 100 });
 
