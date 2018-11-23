@@ -11,8 +11,6 @@
     "use strict";
     $(function ($) {
 
-
-
         //Detecting viewpot dimension
         var vH = $(window).height();
         var vW = $(window).width();
@@ -55,7 +53,6 @@
             $('.sub-menu').stop().slideUp(1000);
         });
 
-
         //Main Menu Trigger
         (function ($) {
             $.fn.menuPanelTrigger = function () {
@@ -79,8 +76,6 @@
             $().menuPanelTrigger();
         });
 
-
-
         //On-Scroll Animations
         $(window).load(function () {
 
@@ -99,9 +94,6 @@
                 $('.animated').css("visibility", "visible");
             }
         });
-
-
-
 
         //PORTFOLIO UX
         (function ($) {
@@ -132,13 +124,10 @@
             $('.filter-notification a').hide();
         }
 
-
-
         //ISOTOPE
 
         //ISOTOPE GLOBALS
         var $container1 = $('.works-container');
-
 
         //ISOTOPE INIT
         $(window).load(function () {
@@ -178,14 +167,11 @@
             $container1.isotope('layout');
         }, false);
 
-
-
         //VENOBOX
         $('.venobox, .image-lightbox-link').venobox({
             numeratio: true,
             infinigall: true
         });
-
 
         //CAROUSEL
         $(".team-carousel").owlCarousel({
@@ -246,7 +232,6 @@
             }
         });
 
-
         //Slick Carousel / Synchronized:
 
         $('.slider-for').slick({
@@ -285,9 +270,6 @@
                 }
             ]
         });
-
-
-
         //PARALLAX LAYERS:
 
         //Initialize Each Parallax Layer  
@@ -304,7 +286,6 @@
                 parallaxInit();
             });
 
-
         } else {
 
             //Dectivate Parallax effect if mobile device is detected (bg image is displayed)
@@ -312,11 +293,9 @@
 
         }
 
-
         /******************************************
           SLIDER REVOLUTION  -
         ******************************************/
-
 
         $(document).ready(function () {
             $('#rev_slider_3_1').show().revolution({
@@ -325,58 +304,40 @@
                 startwidth: 1200,
                 startheight: 500,
                 hideThumbs: 0,
-
                 thumbWidth: 100,
                 thumbHeight: 50,
                 thumbAmount: 3,
-
-
                 simplifyAll: "off",
-
                 navigationType: "bullet",
                 navigationArrows: "none",
                 navigationStyle: "round",
-
                 touchenabled: "on",
                 onHoverStop: "on",
                 nextSlideOnWindowFocus: "off",
-
                 swipe_threshold: 75,
                 swipe_min_touches: 1,
                 drag_block_vertical: false,
-
-
-
                 keyboardNavigation: "off",
-
                 navigationHAlign: "right",
                 navigationVAlign: "center",
                 navigationHOffset: 20,
                 navigationVOffset: 0,
-
                 soloArrowLeftHalign: "left",
                 soloArrowLeftValign: "center",
                 soloArrowLeftHOffset: 20,
                 soloArrowLeftVOffset: 0,
-
                 soloArrowRightHalign: "right",
                 soloArrowRightValign: "center",
                 soloArrowRightHOffset: 20,
                 soloArrowRightVOffset: 0,
-
                 shadow: 0,
                 fullWidth: "off",
                 fullScreen: "on",
-
                 spinner: "spinner0",
-
                 stopLoop: "off",
                 stopAfterLoops: -1,
                 stopAtSlide: -1,
-
                 shuffle: "off",
-
-
                 forceFullWidth: "off",
                 fullScreenAlignForce: "off",
                 minFullScreenHeight: "",
@@ -394,10 +355,6 @@
                 hideAllCaptionAtLilmit: 0,
                 startWithSlide: 0
             });
-
-
-
-
             //FULLSCREEN BG VIDEO:
 
             /* plays the BG Vimeo or Youtube video if non-mobile device is detected*/
@@ -413,35 +370,25 @@
                     adproof: true,
                     volume: 0 // control the video volume by setting a value from 0 to 99
                 });
-
             } else {
-
                 /* displays a poster image if mobile device is detected*/
                 $('.video-bg').addClass('poster-img');
 
             }
-
-
-
-
             //CONTACT FORM VALIDATION
             $(document).ready(function ($) {
 
                 // hide messages 
                 $(".error").hide();
                 $(".success").hide();
-
                 $('#contactForm input').on('click', function () {
                     $(".error").fadeOut();
                     return false;
                 });
-
                 // on submit...
                 $("#contactForm #submit").on('click', function () {
                     $(".error").hide();
-
                     //required:
-
                     //name
                     var name = $("input#name").val();
                     if (name == "") {
@@ -476,9 +423,6 @@
                         return pattern.test(emailAddress);
                     };
 
-
-
-
                     // comments
                     var comments = $("#msg").val();
 
@@ -491,42 +435,33 @@
 
                     return false;
                 });
-
-
                 // on success...
                 function success() {
                     $("#success").fadeIn();
                     $("#contactForm").fadeOut();
                 }
-
                 return false;
             });
-
-
-
-
             //GOOLGE MAPS with SNAZZY MAP:
-
             // When the window has finished loading create our google map below
             var map_shown = false;
             google.maps.event.addDomListener(window, 'load', map_init);
 
             function map_init() {
 
-
                 //Setup waypoints plugin
                 $('.contact').waypoint(function (direction) {
-
+                    var myLatLng = new google.maps.LatLng(20.980479, -89.615905)
                     if (direction === 'down' && !map_shown) {
                         map_shown = true;
                         // Basic options for a simple Google Map
                         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                         var mapOptions = {
                             // How zoomed in you want the map to start at (always required)
-                            zoom: 11,
+                            zoom: 15,
 
                             // The latitude and longitude to center the map (always required)
-                            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                            center: myLatLng, // New York
 
                             // How you would like to style the map. 
                             // This is where you would paste any style found on Snazzy Maps.
@@ -542,28 +477,16 @@
 
                         // Let's also add a marker while we're at it
                         var marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(40.6700, -73.9400),
+                            position: myLatLng,
                             map: map,
-                            title: 'Snazzy!'
+                            title: 'Solo Dilo',
                         });
-
                     }
                     else {
                     }
-
                 }, { offset: 100 });
-
-
-
-
             }
-
-
-
         }); //ready
-
-
-
     });
     // $(function ($)  : ends
 })();

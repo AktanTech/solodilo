@@ -244,17 +244,18 @@ footer.mastfoot h5 {
     margin-bottom: 0;
 }
 
-.foot-social li a>img {
-    width: 32px;
+.foot-social li a>i {
+    width: 48px;
     opacity: 1;
     -webkit-transition: all .8s linear;
     -moz-transition: all .8s linear;
     -ms-transition: all .8s linear;
     -o-transition: all .8s linear;
     transition: all .8s linear;
+    font-size: 3rem;
 }
 
-.foot-social li a>img:hover {
+.foot-social li a>i:hover {
     opacity: 0.5;
     -webkit-transition: all .8s linear;
     -moz-transition: all .8s linear;
@@ -275,7 +276,6 @@ footer.mastfoot h5 {
 
 .foot-print {
     width: 100%;
-    height: 100px;
     background-color: #222;
     background-position: center center;
     background-size: cover;
@@ -1483,7 +1483,7 @@ fieldset h1 {
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .color {
-    color: #ec1a49
+    color: #FDED00
 }
 
 .white {
@@ -1507,7 +1507,7 @@ fieldset h1 {
 }
 
 .color-bg {
-    background-color: #ec1a49
+    background-color: #FDED00
 }
 
 .white-bg {
@@ -1571,21 +1571,21 @@ a {
 }
 
 a:hover {
-    color: #ec1a49!important
+    color: #FDED00!important
 }
 
 ::selection {
-    background: #ec1a49;
+    background: #FDED00;
     color: #fff
 }
 
 ::-moz-selection {
-    background: #ec1a49;
+    background: #FDED00;
     color: #fff
 }
 
 .btn-ignite-color {
-    background-color: #ec1a49!important;
+    background-color: #FDED00!important;
     color: #fff!important
 }
 
@@ -1596,7 +1596,7 @@ a:hover {
 
 .btn-ignite-dark:hover,
 .btn-ignite-white:hover {
-    background-color: #ec1a49!important
+    background-color: #FDED00!important
 }
 
 nav.mastnav {
@@ -1608,7 +1608,7 @@ nav.mastnav {
 }
 
 .works-filter li a:hover {
-    color: #ec1a49!important
+    color: #FDED00!important
 }
 
 .filter-notification,
@@ -1625,11 +1625,11 @@ nav.mastnav {
 }
 
 .works-item-inner h3>span {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 .team-overlay {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 .team .owl-controls {
@@ -1646,19 +1646,19 @@ nav.mastnav {
 
 .main-link:hover,
 .sub-menu a:hover {
-    color: #ec1a49!important
+    color: #FDED00!important
 }
 
 .project-nav-icon-wrap li:hover {
-    background-color: #ec1a49
+    background-color: #FDED00
 }
 
 .filter-active span {
-    color: #ec1a49
+    color: #FDED00
 }
 
 .cd-headline.loading-bar .cd-words-wrapper::after {
-    background-color: #ec1a49
+    background-color: #FDED00
 }
 
 .intro07 .tp-bullets.simplebullets.round .bullet::before {
@@ -1666,7 +1666,7 @@ nav.mastnav {
 }
 
 .intro07 .tp-bullets.simplebullets.round .bullet.selected {
-    background-color: #ec1a49!important
+    background-color: #FDED00!important
 }
 
 .project-page .tp-bullets.simplebullets.round .bullet::before {
@@ -1674,11 +1674,11 @@ nav.mastnav {
 }
 
 .project-page .tp-bullets.simplebullets.round .bullet.selected {
-    background-color: #ec1a49!important
+    background-color: #FDED00!important
 }
 
 .featured-caption-one span {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 .works-item-inner {
@@ -1690,27 +1690,27 @@ nav.mastnav {
 }
 
 .journal-block:hover h3 {
-    color: #ec1a49
+    color: #FDED00
 }
 
 .journal-block {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 .works-item-inner h3:after {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 .caption-stamp {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 .feature-block {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 .client-block {
-    border-color: #ec1a49
+    border-color: #FDED00
 }
 
 body,
