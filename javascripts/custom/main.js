@@ -297,63 +297,128 @@
           SLIDER REVOLUTION  -
         ******************************************/
 
+        var setREVStartSize = function () {
+            try {
+                var e = new Object,
+                    i = jQuery(window).width(),
+                    t = 9999,
+                    r = 0,
+                    n = 0,
+                    l = 0,
+                    f = 0,
+                    s = 0,
+                    h = 0;
+                e.c = jQuery('#rev_slider_3_1');
+                e.responsiveLevels = [1240, 1024, 778, 480];
+                e.gridwidth = [1900, 1024, 778, 420];
+                e.gridheight = [900, 768, 960, 720];
+
+                e.sliderLayout = "fullwidth";
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
+                    f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                    var u = (e.c.width(), jQuery(window).height());
+                    if (void 0 != e.fullScreenOffsetContainer) {
+                        var c = e.fullScreenOffsetContainer.split(",");
+                        jQuery.each(c, function (e, i) {
+                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                    }
+                    f = u
+                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                e.c.closest(".rev_slider_wrapper").css({
+                    height: f
+                })
+            } catch (d) {
+                console.log("Failure at Presize of Slider:" + d)
+            }
+        };
+
+
+        setREVStartSize();
+
         $(document).ready(function () {
             $('#rev_slider_3_1').show().revolution({
+                sliderType: "standard",
+                sliderLayout: "fullwidth",
+                jsFileLocation: "javascript/",
                 dottedOverlay: "none",
-                delay: 9000,
-                startwidth: 1200,
-                startheight: 500,
-                hideThumbs: 0,
-                thumbWidth: 100,
-                thumbHeight: 50,
-                thumbAmount: 3,
-                simplifyAll: "off",
-                navigationType: "bullet",
-                navigationArrows: "none",
-                navigationStyle: "round",
-                touchenabled: "on",
-                onHoverStop: "on",
-                nextSlideOnWindowFocus: "off",
-                swipe_threshold: 75,
-                swipe_min_touches: 1,
-                drag_block_vertical: false,
-                keyboardNavigation: "off",
-                navigationHAlign: "right",
-                navigationVAlign: "center",
-                navigationHOffset: 20,
-                navigationVOffset: 0,
-                soloArrowLeftHalign: "left",
-                soloArrowLeftValign: "center",
-                soloArrowLeftHOffset: 20,
-                soloArrowLeftVOffset: 0,
-                soloArrowRightHalign: "right",
-                soloArrowRightValign: "center",
-                soloArrowRightHOffset: 20,
-                soloArrowRightVOffset: 0,
+                delay: 5000,
+                navigation: {
+                    keyboardNavigation: "on",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        style: "hades",
+                        enable: true,
+                        hide_onmobile: false,
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        tmp: '<div class="tp-arr-allwrapper">   <div class="tp-arr-imgholder"></div></div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 20,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 20,
+                            v_offset: 0
+                        }
+                    },
+                    bullets: {
+                        enable: true,
+                        hide_onmobile: false,
+                        style: "hades",
+                        hide_onleave: false,
+                        direction: "horizontal",
+                        h_align: "center",
+                        v_align: "bottom",
+                        h_offset: 0,
+                        v_offset: 20,
+                        space: 5,
+                        tmp: '<span class="tp-bullet-image"></span>'
+                    }
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                gridwidth: [1900, 1024, 778, 420],
+                gridheight: [900, 768, 960, 720],
+                lazyType: "none",
+                parallax: {
+                    type: "mouse+scroll",
+                    origo: "slidercenter",
+                    speed: 400,
+                    levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+                },
                 shadow: 0,
-                fullWidth: "off",
-                fullScreen: "on",
                 spinner: "spinner0",
                 stopLoop: "off",
                 stopAfterLoops: -1,
                 stopAtSlide: -1,
                 shuffle: "off",
-                forceFullWidth: "off",
-                fullScreenAlignForce: "off",
-                minFullScreenHeight: "",
-                hideTimerBar: "on",
+                autoHeight: "off",
                 hideThumbsOnMobile: "off",
-                hideNavDelayOnMobile: 1500,
-                hideBulletsOnMobile: "off",
-                hideArrowsOnMobile: "off",
-                hideThumbsUnderResolution: 0,
-
-                fullScreenOffsetContainer: "#pseudo-header",
-                fullScreenOffset: "",
                 hideSliderAtLimit: 0,
                 hideCaptionAtLimit: 0,
                 hideAllCaptionAtLilmit: 0,
-                startWithSlide: 0
+                startWithSlide: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: "off",
+                },
             });
             //FULLSCREEN BG VIDEO:
 

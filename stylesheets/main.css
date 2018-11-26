@@ -1721,3 +1721,23 @@ body,
 p {
     font-family: 'designova_ss_regular', sans-serif
 }
+
+.tp-caption.icon {
+    padding: 40px;
+    display: block;
+}
+
+.tp-caption.t2:before {
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: skew(30deg, 0);
+    -moz-transform: skew(30deg, 0);
+    -ms-transform: skew(30deg, 0);
+    -o-transform: skew(30deg, 0);
+    z-index: -1;
+}
