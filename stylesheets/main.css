@@ -269,6 +269,10 @@ footer.mastfoot h5 {
     line-height: 19px;
 }
 
+.credits img {
+    width: 16rem;
+}
+
 .main-logo {
     max-height: 50px;
     margin-top: 5px;
@@ -1539,31 +1543,31 @@ fieldset h1 {
 }
 
 .font3 {
-    font-family: 'designova_ss_regular', sans-serif
-}
-
-.font3xblack {
-    font-family: 'designova_ss_xblack', sans-serif
+    font-family: 'AceSans_regular', sans-serif
 }
 
 .font3black {
-    font-family: 'designova_ss_black', sans-serif
+    font-family: 'AceSans_black', sans-serif
 }
 
 .font3bold {
-    font-family: 'designova_ss_bold', sans-serif
+    font-family: 'AceSans_bold', sans-serif
 }
 
 .font3light {
-    font-family: 'designova_ss_light', sans-serif
+    font-family: 'AceSans_light', sans-serif
 }
 
 .font3xlight {
-    font-family: 'designova_ss_xlight', sans-serif
+    font-family: 'AceSans_xlight', sans-serif
+}
+
+.font3xmedium {
+    font-family: 'AceSans_medium', sans-serif
 }
 
 .font3thin {
-    font-family: 'designova_ss_thin', sans-serif
+    font-family: 'AceSans_thin', sans-serif
 }
 
 a {
