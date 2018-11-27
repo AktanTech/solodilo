@@ -1419,11 +1419,15 @@ fieldset h1 {
 
 .valign {
     position: relative;
-    top: 50%;
+    top: -36%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.top50 {
+    top: 50% !important;
 }
 
 .overlay {
