@@ -151,13 +151,13 @@ a:focus {
 }
 
 .promo-text-alt h3 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .promo-text-alt h3>span {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 16px;
+    line-height: 24px;
     display: block;
     margin-bottom: 10px;
 }
@@ -212,6 +212,7 @@ header.masthead {
     padding: 10px;
     margin-bottom: 20px;
     z-index: 9900;
+    background-color: rgba(255, 255, 255, 0.0);
 }
 
 
