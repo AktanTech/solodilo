@@ -92,6 +92,10 @@ a:focus {
     margin-bottom: 20px;
 }
 
+.rotate {
+    transform: rotate(90deg)
+}
+
 .liner-small {
     width: 100px;
     height: 2px;
@@ -133,7 +137,7 @@ a:focus {
 }
 
 .page-section {
-    padding: 160px 0;
+    padding-top: 160px;
 }
 
 .promo-text h3 {
@@ -142,7 +146,7 @@ a:focus {
 }
 
 .promo-text h6 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 21px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -151,12 +155,12 @@ a:focus {
 }
 
 .promo-text-alt h3 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
 }
 
 .promo-text-alt h3>span {
-    font-size: 16px;
+    font-size: 23px;
     line-height: 24px;
     display: block;
     margin-bottom: 10px;
@@ -184,7 +188,7 @@ div#preloader {
     z-index: 99999;
 }
 
-div#preloader..fluidview {
+div#preloader.fluidview {
     left: 0px;
 }
 
@@ -1252,6 +1256,7 @@ fieldset h1 {
 /*Buttons*/
 
 .btn-ignite {
+    font-family: 'AceSans_regular';
     border: none;
     border-radius: 0px;
     text-decoration: none;
@@ -1638,7 +1643,7 @@ nav.mastnav {
 }
 
 .team-overlay {
-    border-color: #FDED00
+    border-color: transparent;
 }
 
 .team .owl-controls {
@@ -1715,7 +1720,7 @@ nav.mastnav {
 }
 
 .feature-block {
-    border-color: #FDED00
+    border-color: transparent
 }
 
 .client-block {
@@ -1730,6 +1735,10 @@ p {
 .tp-caption.icon {
     padding: 40px;
     display: block;
+}
+
+.tp-caption.icon {
+    font-family: 'AceSans_regular'
 }
 
 .tp-caption.t2:before {
