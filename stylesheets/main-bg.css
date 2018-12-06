@@ -10,15 +10,19 @@
 }
 
 .team-01-carousel-item-01 {
-    background-image: url('../images/team/01.jpg');
+    background-image: url('../images/Sindy_web3.png');
 }
 
 .team-01-carousel-item-02 {
-    background-image: url('../images/team/02.jpg');
+    background-image: url('../images/Alex_web.png');
 }
 
 .team-01-carousel-item-03 {
-    background-image: url('../images/team/03.jpg');
+    background-image: url('../images/Alex\ Z_web.png');
+}
+
+.team-01-carousel-item-04 {
+    background-image: url('../images/Chicos_web.png');
 }
 
 .project-01-carousel-item-01 {

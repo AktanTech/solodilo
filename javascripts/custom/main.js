@@ -516,7 +516,7 @@
 
                 //Setup waypoints plugin
                 $('.contact').waypoint(function (direction) {
-                    var myLatLng = new google.maps.LatLng(20.980479, -89.615905)
+                    var myLatLng = new google.maps.LatLng(21.025121, -89.649213)
                     if (direction === 'down' && !map_shown) {
                         map_shown = true;
                         // Basic options for a simple Google Map
@@ -530,7 +530,7 @@
 
                             // How you would like to style the map. 
                             // This is where you would paste any style found on Snazzy Maps.
-                            styles: [{ "stylers": [{ "visibility": "simplified" }] }, { "stylers": [{ "color": "#131314" }] }, { "featureType": "water", "stylers": [{ "color": "#131313" }, { "lightness": 7 }] }, { "elementType": "labels.text.fill", "stylers": [{ "visibility": "on" }, { "lightness": 25 }] }]
+                            // styles: [{ "stylers": [{ "visibility": "simplified" }] }, { "stylers": [{ "color": "#131314" }] }, { "featureType": "water", "stylers": [{ "color": "#131313" }, { "lightness": 7 }] }, { "elementType": "labels.text.fill", "stylers": [{ "visibility": "on" }, { "lightness": 25 }] }]
                         };
 
                         // Get the HTML DOM element that will contain your map 
