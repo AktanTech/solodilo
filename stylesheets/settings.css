@@ -1152,17 +1152,18 @@ img.tp-slider-alternative-image	{
 }
 
 .tp-caption.largetitleslide01,.largetitleslide01 {
-	font-size:55px;
-	line-height:66px;
-	font-weight:400;
-	font-family:Questrial;
+	font-size:60px;
+	line-height:90px;
+	font-weight:bolder;
+	font-family:designova_ss_regular;
 	color:#111111;
 	text-decoration:none;
 	background-color:transparent;
 	border-width:0px;
 	border-color:rgb(17,17,17);
 	border-style:none;
-	letter-spacing:0.2em
+	letter-spacing:3px !important;
+	text-align: center;
 }
 .tp-caption.smalldescslide01,.smalldescslide01 {
 	font-size:14px;
