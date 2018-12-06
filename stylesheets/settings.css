@@ -252,7 +252,7 @@ website:   	http://www.themepunch.com
 }
 
 .fullwidthbanner-container .fullwidthabanner{
-	width:100%;
+	width:100% !important;
 	position:relative;
 }
 

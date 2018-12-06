@@ -1254,7 +1254,7 @@ img.tp-slider-alternative-image {
 **********************************************/
 
 .rev_slider_wrapper {
-    width: 100%;
+    width: 100% !important;
 }
 
 .fullscreen-container {
