@@ -1,5 +1,6 @@
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /*
 Note: The best way to structure the use of media queries is to create the queries 
 near the relevant codeFor example, if you wanted to change the styles for buttons
@@ -7,47 +8,86 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there
 */
 
-
 /* Larger than Desktop HD */
-@media (max-width: 1200px) {
+
+@media (max-width: 1200px) {}
+
+@media( min-width: 992px) {
+    .lin {
+        width: 50% !important;
+    }
 }
 
 /* Larger than desktop */
+
 @media (max-width: 992px) {
+    .liner {
+        transform: rotate(0deg);
+        margin-bottom: 10rem;
+    }
     .container {
         max-width: 892px;
         padding-left: 50px;
         padding-right: 50px;
     }
-
-    .text-left, .text-right {
+    .text-left,
+    .text-right {
         text-align: center;
     }
-
     .img-responsive {
         display: inline-block;
     }
 }
 
 /* Larger than tablet */
+
 @media (max-width: 800px) {
+    .hiddenInv {
+        display: block !important;
+    }
+    .rev_slider,
+    .fullwidthabanner,
+    .revslider-initialised,
+    .tp-simpleresponsive,
+    .tp-fullwidth-forcer {
+        height: 327px !important;
+    }
+    .intro07,
+    .tp-bgimg {
+        background-size: -1% !important;
+    }
+    .hidden {
+        display: block !important;
+    }
+    .rev_slider_wrapper,
+    .fullwidthbanner-container {
+        background-color: rgb(255, 255, 255, 0) !important;
+        height: 0 !important;
+    }
+    .tp-caption {
+        margin-left: -15px;
+        font-size: 12px !important;
+    }
     .container {
+        margin-top: 0 !important;
         max-width: 600px;
         padding-left: 100px;
         padding-right: 100px;
     }
-
-    .text-left, .text-right, .mastfoot, .credits, .services-item {
+    .text-left,
+    .text-right,
+    .mastfoot,
+    .credits,
+    .services-item {
         text-align: center;
     }
-
     .img-responsive {
         display: inline-block;
     }
-    .works-masonry-container .works-item{
+    .works-masonry-container .works-item {
         width: 100% !important;
     }
-    .page-section{
+    .page-section {
         padding: 100px 0;
     }
     .add-top {
@@ -74,7 +114,7 @@ there
     .pad-bottom-half {
         padding-bottom: 50px;
     }
-    .main-link{
+    .main-link {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 21px;
@@ -84,15 +124,15 @@ there
         letter-spacing: normal;
         line-height: 19px;
     }
-    .menu-notification span{
+    .menu-notification span {
         position: fixed;
         top: 5px;
         right: 20px;
     }
-    nav.mastnav{
+    nav.mastnav {
         padding: 30px;
     }
-    .menu-close-notification span{
+    .menu-close-notification span {
         position: fixed;
         top: 120px;
         left: 50%;
@@ -101,66 +141,73 @@ there
         margin-left: -40px;
         font-size: 36px;
     }
-    .promo-text-alt h3 > span, .clientele h3, .project-page-head h3 span{
+    .promo-text-alt h3>span,
+    .clientele h3,
+    .project-page-head h3 span {
         font-size: 14px;
         line-height: 21px;
     }
-    .main-heading,.promo-text-alt h3, .team-caps h3, 
-    .promo-text h3, .feature-block h3, .project-page-head h3{
+    .main-heading,
+    .promo-text-alt h3,
+    .team-caps h3,
+    .promo-text h3,
+    .feature-block h3,
+    .project-page-head h3 {
         font-size: 20px;
         line-height: 27px;
     }
-    .caption-stamp{
+    .caption-stamp {
         padding: 10px;
         margin-right: 0;
         margin-bottom: 30px;
     }
-    .elements-counter{
+    .elements-counter {
         display: block;
         width: 100%;
         text-align: center;
-    } 
-    .elements-counter .number, .journal h5{
+    }
+    .elements-counter .number,
+    .journal h5 {
         font-size: 28px;
         line-height: 35px;
         margin-top: 30px;
     }
-    .elements-counter-wrap .subject{
+    .elements-counter-wrap .subject {
         margin-top: 10px;
     }
-    .services .service-block{
+    .services .service-block {
         padding: 40px 20px;
         text-align: center;
     }
-    .services .service-block span{
+    .services .service-block span {
         display: inline-block;
     }
-    .feature-block{
+    .feature-block {
         padding: 20px;
     }
-    .works-filter-panel{
+    .works-filter-panel {
         padding: 30px 0;
     }
-    .works-filter li{
+    .works-filter li {
         display: block;
     }
-    .works-masonry-container .works-item{
+    .works-masonry-container .works-item {
         width: 50% !important;
     }
-    .contact-item{
+    .contact-item {
         padding: 20px 40px;
     }
-    footer.mastfoot{
+    footer.mastfoot {
         padding: 80px 0;
     }
-    footer.mastfoot h5{
+    footer.mastfoot h5 {
         font-size: 12px;
         line-height: 19px;
     }
-
 }
 
 /*iPhone 6Plus Landscape Mode*/
+
 @media screen and (max-width: 736px) {
     .container {
         max-width: 636px;
@@ -169,8 +216,8 @@ there
     }
 }
 
-
 /*iPhone 6 Landscape Mode*/
+
 @media screen and (max-width: 667px) {
     .container {
         width: 567px;
@@ -179,8 +226,8 @@ there
     }
 }
 
-
 /*Google Nexus and Other Large Smart Phones v1*/
+
 @media screen and (max-width: 600px) {
     .container {
         width: 500px;
@@ -190,13 +237,14 @@ there
 }
 
 /*iPhone Landscape Mode and Mediium Smart Phones*/
+
 @media screen and (max-width: 480px) {
     .container {
         max-width: 400px;
         padding-left: 40px;
         padding-right: 40px;
     }
-    .page-section{
+    .page-section {
         padding: 100px 0;
     }
     .add-top {
@@ -223,7 +271,7 @@ there
     .pad-bottom-half {
         padding-bottom: 50px;
     }
-    .main-link{
+    .main-link {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 21px;
@@ -233,15 +281,15 @@ there
         letter-spacing: normal;
         line-height: 19px;
     }
-    .menu-notification span{
+    .menu-notification span {
         position: fixed;
         top: 5px;
         right: 20px;
     }
-    nav.mastnav{
+    nav.mastnav {
         padding: 30px;
     }
-    .menu-close-notification span{
+    .menu-close-notification span {
         position: fixed;
         top: 120px;
         left: 50%;
@@ -250,65 +298,73 @@ there
         margin-left: -40px;
         font-size: 36px;
     }
-    .promo-text-alt h3 > span, .clientele h3, .project-page-head h3 span{
+    .promo-text-alt h3>span,
+    .clientele h3,
+    .project-page-head h3 span {
         font-size: 14px;
         line-height: 21px;
     }
-    .main-heading,.promo-text-alt h3, .team-caps h3, 
-    .promo-text h3, .feature-block h3, .project-page-head h3{
+    .main-heading,
+    .promo-text-alt h3,
+    .team-caps h3,
+    .promo-text h3,
+    .feature-block h3,
+    .project-page-head h3 {
         font-size: 20px;
         line-height: 27px;
     }
-    .caption-stamp{
+    .caption-stamp {
         padding: 10px;
         margin-right: 0;
         margin-bottom: 30px;
     }
-    .elements-counter{
+    .elements-counter {
         display: block;
         width: 100%;
         text-align: center;
-    } 
-    .elements-counter .number, .journal h5{
+    }
+    .elements-counter .number,
+    .journal h5 {
         font-size: 28px;
         line-height: 35px;
         margin-top: 30px;
     }
-    .elements-counter-wrap .subject{
+    .elements-counter-wrap .subject {
         margin-top: 10px;
     }
-    .services .service-block{
+    .services .service-block {
         padding: 40px 20px;
         text-align: center;
     }
-    .services .service-block span{
+    .services .service-block span {
         display: inline-block;
     }
-    .feature-block{
+    .feature-block {
         padding: 20px;
     }
-    .works-filter-panel{
+    .works-filter-panel {
         padding: 30px 0;
     }
-    .works-filter li{
+    .works-filter li {
         display: block;
     }
-    .works-masonry-container .works-item{
+    .works-masonry-container .works-item {
         width: 100% !important;
     }
-    .contact-item{
+    .contact-item {
         padding: 20px 40px;
     }
-    footer.mastfoot{
+    footer.mastfoot {
         padding: 80px 0;
     }
-    footer.mastfoot h5{
+    footer.mastfoot h5 {
         font-size: 12px;
         line-height: 19px;
     }
 }
 
 /*iPhone 6Plus Portrait Mode*/
+
 @media screen and (max-width: 414px) {
     .container {
         max-width: 374px;
@@ -318,6 +374,7 @@ there
 }
 
 /*iPhone 6 Portrait Mode*/
+
 @media screen and (max-width: 375px) {
     .container {
         max-width: 335px;
@@ -327,6 +384,7 @@ there
 }
 
 /*iPhone 5S, 5, 4S & 4 Portrait Mode and Very Small Mobile Phones*/
+
 @media screen and (max-width: 320px) {
     .container {
         max-width: 300px;

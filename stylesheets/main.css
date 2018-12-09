@@ -365,7 +365,7 @@ nav.mastnav ul li {
 }
 
 .intro07 .tp-bgimg {
-    background-size: 100% !important
+    background-size: 100%;
 }
 
 .intro07.tp-bullets.simplebullets.round {
@@ -1730,6 +1730,14 @@ nav.mastnav {
 body,
 p {
     font-family: 'designova_ss_regular', sans-serif
+}
+
+.tp-caption {
+    font-family: 'AceSans_regular' !important;
+    font-size: 26px !important;
+    border-radius: 12px !important;
+    padding: 8px !important;
+    background-color: rgba(255,255,255, 0.6) !important;
 }
 
 .tp-caption.icon {
