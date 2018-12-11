@@ -43,8 +43,8 @@ h6 {
 }
 
 p {
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 3rem;
+    line-height: 40px;
 }
 
 a {
@@ -55,6 +55,11 @@ a:focus {
     outline: none;
 }
 
+.subtitle{
+    letter-spacing: 0 !important;
+    font-family: 'AceSans_black';
+    text-align: center;
+}
 
 /*Typography*/
 
@@ -85,7 +90,7 @@ a:focus {
 }
 
 .liner {
-    width: 200px;
+    width: 290px;
     height: 10px;
     display: inline-block;
     margin-top: 10px;
@@ -137,7 +142,7 @@ a:focus {
 }
 
 .page-section {
-    padding-top: 160px;
+    padding-top: 120px;
 }
 
 .promo-text h3 {
@@ -1369,7 +1374,7 @@ fieldset h1 {
 }
 
 .pad-top-quarter {
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 .pad-bottom {
@@ -1381,7 +1386,7 @@ fieldset h1 {
 }
 
 .pad-bottom-quarter {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .pad-left-half {
@@ -1729,7 +1734,7 @@ nav.mastnav {
 
 body,
 p {
-    font-family: 'designova_ss_regular', sans-serif
+    font-family: 'Pistara';
 }
 
 .tp-caption {

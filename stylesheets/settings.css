@@ -1753,8 +1753,8 @@ img.tp-slider-alternative-image {
 
 .tparrows {
     cursor: pointer;
-    background: #000;
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
+    /* background: rgba(0, 0, 0, 0.5);  */
     width: 40px;
     height: 40px;
     position: absolute;
@@ -1763,7 +1763,7 @@ img.tp-slider-alternative-image {
 }
 
 .tparrows:hover {
-    background: #000;
+    background: transparent;
 }
 
 .tparrows:before {
@@ -1777,6 +1777,7 @@ img.tp-slider-alternative-image {
 
 .tparrows.tp-leftarrow:before {
     content: '\e824';
+    color: #000;
 }
 
 .tparrows.tp-rightarrow:before {

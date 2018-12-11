@@ -43,7 +43,7 @@ there
 
 @media (max-width: 800px) {
     .hiddenInv {
-        display: block !important;
+        display: none!important;
     }
     .rev_slider,
     .fullwidthabanner,
