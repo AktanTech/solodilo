@@ -55,6 +55,12 @@ a:focus {
     outline: none;
 }
 
+.title-menu{
+    letter-spacing: 0.5rem !important;
+    font-family: 'AceSans_black';
+    text-align: left;
+}
+
 .subtitle{
     letter-spacing: 0 !important;
     font-family: 'AceSans_black';
@@ -570,11 +576,12 @@ nav.mastnav ul li {
 
 .services .service-block {
     padding: 60px;
+    text-align: center;
 }
 
 .services .service-block span {
     border-radius: 50%;
-    display: block;
+    display: inline-block;
     font-size: 56px;
     height: 90px;
     text-align: center;
@@ -1342,7 +1349,7 @@ fieldset h1 {
 }
 
 .add-top-half {
-    margin-top: 80px;
+    /* margin-top: 30px; */
 }
 
 .add-top-quarter {
@@ -1605,7 +1612,8 @@ a:hover {
 
 .btn-ignite-color {
     background-color: #FDED00!important;
-    color: #fff!important
+    color: #000!important;
+    font-weight: bolder;
 }
 
 .btn-ignite-color:hover {
