@@ -1660,7 +1660,7 @@ nav.mastnav {
 }
 
 .team .owl-controls {
-    background-color: #121212
+    background-color: transparent;
 }
 
 .main-link {
