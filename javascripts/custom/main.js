@@ -552,7 +552,29 @@
                 }, { offset: 100 });
             }
         }); //ready
+
+        $(".icon-a").click(function(evt){
+            var id_div = evt.currentTarget.offsetParent.id;
+            var display_info = evt.currentTarget.hash;
+
+            $(`${display_info}`).on('show.bs.collapse', function () {
+                $(`#${id_div}`).removeClass("col-md-12");
+                $(`#${id_div}`).addClass("col-md-4");
+            })
+            $(`${display_info}`).on('hidden.bs.collapse', function () {
+                $(`#${id_div}`).removeClass("col-md-4");
+                $(`#${id_div}`).addClass("col-md-12");
+            })
+        })
+
+        $(".hover-team").hover(function(evt){
+            var id_div = evt.currentTarget.id;
+            console.log(id_div);
+            
+        })
     });
     // $(function ($)  : ends
+    
 })();
 //  JSHint wrapper $(function ($)  : ends
+
