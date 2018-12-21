@@ -569,9 +569,50 @@
 
         $(".hover-team").hover(function(evt){
             var id_div = evt.currentTarget.id;
-            console.log(id_div);
+            console.log(evt);
             
-        })
+            switch(id_div){
+                case "sindy":
+                    $("#full-team").fadeIn('slow',function(){
+                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
+                        $("#full-team").addClass("team-01-carousel-item-02 hover-contain");    
+                        $(".info1, .info1>h1").css("display","block");                    
+                    })
+                break;
+                case "alejandro":
+                    $("#full-team").fadeIn('slow',function(){
+                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
+                        $("#full-team").addClass("team-01-carousel-item-03 hover-contain");
+                        $(".info2, .info2>h1").css("display","block");
+                    })
+                break;
+                case "alex":
+                    $("#full-team").fadeIn('slow',function(){
+                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
+                        $("#full-team").addClass("team-01-carousel-item-04 hover-contain");
+                        $(".info3, .info3>h1").css("display","block");
+                    })
+                break;
+                case "web":
+                    $("#full-team").fadeIn('slow',function(){
+                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
+                        $("#full-team").addClass("team-01-carousel-item-05 hover-contain");
+                        $(".info4, .info4>h1").css("display","block");
+                    })
+                break;
+            }
+            
+        }, function(){
+            $("#full-team").fadeOut(function(){
+                $("#full-team").removeClass();
+                $("#full-team").addClass("team-01-carousel-item-01 img-bg img-bg-full");
+                $("#full-team").css("display","block");
+                $(".info1, .info1>h1").css("display","none");
+                $(".info2, .info2>h1").css("display","none");
+                $(".info3, .info3>h1").css("display","none");
+                $(".info4, .info4>h1").css("display","none");          
+            })
+        });
     });
     // $(function ($)  : ends
     
