@@ -567,51 +567,71 @@
             })
         })
 
-        $(".hover-team").hover(function(evt){
+        $(".hover-team").click(function(evt){
             var id_div = evt.currentTarget.id;
             console.log(evt);
             
             switch(id_div){
                 case "sindy":
                     $("#full-team").fadeIn('slow',function(){
-                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
-                        $("#full-team").addClass("team-01-carousel-item-02 hover-contain");    
-                        $(".info1, .info1>h1").css("display","block");                    
+                        $("#full-team").removeClass();
+                        $("#full-team").addClass("team-01-carousel-item-02 hover-contain img-bg-full");    
+                        $("#full-team").css("z-index","3");
+                        $(".info-gral-1").css("display","block");
+                        $(".work-description-1").css("display","block");
                     })
                 break;
                 case "alejandro":
                     $("#full-team").fadeIn('slow',function(){
                         $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
                         $("#full-team").addClass("team-01-carousel-item-03 hover-contain");
-                        $(".info2, .info2>h1").css("display","block");
+                        $("#full-team").css("z-index","3");
+                        $(".info-gral-2").css("display","block");
+                        $(".work-description-2").css("display","block");
                     })
                 break;
                 case "alex":
                     $("#full-team").fadeIn('slow',function(){
                         $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
                         $("#full-team").addClass("team-01-carousel-item-04 hover-contain");
-                        $(".info3, .info3>h1").css("display","block");
+                        $("#full-team").css("z-index","3");
+                        $(".info-gral-3").css("display","block");
+                        $(".work-description-3").css("display","block");
                     })
                 break;
                 case "web":
                     $("#full-team").fadeIn('slow',function(){
                         $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
                         $("#full-team").addClass("team-01-carousel-item-05 hover-contain");
-                        $(".info4, .info4>h1").css("display","block");
+                        $("#full-team").css("z-index","3");
+                        $(".info-gral-4").css("display","block");
+                        $(".work-description-4").css("display","block");
                     })
                 break;
             }
             
-        }, function(){
-            $("#full-team").fadeOut(function(){
-                $("#full-team").removeClass();
-                $("#full-team").addClass("team-01-carousel-item-01 img-bg img-bg-full");
-                $("#full-team").css("display","block");
-                $(".info1, .info1>h1").css("display","none");
-                $(".info2, .info2>h1").css("display","none");
-                $(".info3, .info3>h1").css("display","none");
-                $(".info4, .info4>h1").css("display","none");          
-            })
+        });
+
+        $("#full-team").hover(function(){}, function(){
+            if(!($("#full-team").hasClass("team-01-carousel-item-01"))){
+                $("#full-team").fadeOut(function(){
+                    $("#full-team").removeClass();
+                    $("#full-team").addClass("team-01-carousel-item-01 img-bg img-bg-full");
+                    $("#full-team").css("display","block");
+                    //Team-1
+                    $(".info-gral-1").css("display","none");
+                    $(".work-description-1").css("display","none");
+                    //Team-2
+                    $(".info-gral-2").css("display","none");
+                    $(".work-description-2").css("display","none");
+                    //Team-3
+                    $(".info-gral-3").css("display","none");
+                    $(".work-description-3").css("display","none");
+                    //Team-4
+                    $(".info-gral-4").css("display","none");
+                    $(".work-description-4").css("display","none");
+                })
+            }
         });
     });
     // $(function ($)  : ends

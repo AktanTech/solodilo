@@ -14,6 +14,30 @@
 /*-------------------------------------------------------------------------------------*/
 /*1. SINKIN SANS FONT */
 /*-------------------------------------------------------------------------------------*/
+@font-face{
+    font-family: 'Caviar';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Caviar_bold';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Caviar_italic';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Caviar_bitalic';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams_BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face{
     font-family: 'Pistara';
