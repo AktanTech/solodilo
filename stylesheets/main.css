@@ -1820,6 +1820,7 @@ p {
     padding-left: 2em;
     font-family: 'Caviar';
     font-size: 5em;
+    display: none;
     z-index: 1;
 }
 

@@ -569,8 +569,9 @@
 
         $(".hover-team").click(function(evt){
             var id_div = evt.currentTarget.id;
-            console.log(evt);
-            
+            var ancho = $(".info-gral-1").width();
+            $(".hover-team").css("display","none");
+
             switch(id_div){
                 case "sindy":
                     $("#full-team").fadeIn('slow',function(){
@@ -579,6 +580,7 @@
                         $("#full-team").css("z-index","3");
                         $(".info-gral-1").css("display","block");
                         $(".work-description-1").css("display","block");
+                        $(".info-gral-1>h1").show("slide");
                     })
                 break;
                 case "alejandro":
@@ -588,6 +590,7 @@
                         $("#full-team").css("z-index","3");
                         $(".info-gral-2").css("display","block");
                         $(".work-description-2").css("display","block");
+                        $(".info-gral-2>h1").show("slide");
                     })
                 break;
                 case "alex":
@@ -597,6 +600,7 @@
                         $("#full-team").css("z-index","3");
                         $(".info-gral-3").css("display","block");
                         $(".work-description-3").css("display","block");
+                        $(".info-gral-3>h1").show("slide");
                     })
                 break;
                 case "web":
@@ -606,30 +610,36 @@
                         $("#full-team").css("z-index","3");
                         $(".info-gral-4").css("display","block");
                         $(".work-description-4").css("display","block");
+                        $(".info-gral-4>h1").show("slide");
                     })
                 break;
             }
             
         });
 
-        $("#full-team").hover(function(){}, function(){
+        $("#full-team").hover(null, function(){
             if(!($("#full-team").hasClass("team-01-carousel-item-01"))){
                 $("#full-team").fadeOut(function(){
                     $("#full-team").removeClass();
                     $("#full-team").addClass("team-01-carousel-item-01 img-bg img-bg-full");
                     $("#full-team").css("display","block");
+                    $(".hover-team").css("display","block");
                     //Team-1
                     $(".info-gral-1").css("display","none");
                     $(".work-description-1").css("display","none");
+                    $(".info-gral-1>h1").hide("drop");
                     //Team-2
                     $(".info-gral-2").css("display","none");
                     $(".work-description-2").css("display","none");
+                    $(".info-gral-2>h1").hide("drop");
                     //Team-3
                     $(".info-gral-3").css("display","none");
                     $(".work-description-3").css("display","none");
+                    $(".info-gral-3>h1").hide("drop");
                     //Team-4
                     $(".info-gral-4").css("display","none");
                     $(".work-description-4").css("display","none");
+                    $(".info-gral-4>h1").hide("drop");
                 })
             }
         });
