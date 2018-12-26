@@ -63,8 +63,11 @@ a:focus {
 
 .subtitle{
     letter-spacing: 0 !important;
-    font-family: 'AceSans_black';
+    font-family: 'Caviar_bitalic';
     text-align: center;
+    font-size: 2.8em;
+    line-height: 1.3em;
+
 }
 
 /*Typography*/
@@ -96,7 +99,7 @@ a:focus {
 }
 
 .liner {
-    width: 290px;
+    width: 410px;
     height: 10px;
     display: inline-block;
     margin-top: 10px;
@@ -152,17 +155,18 @@ a:focus {
 }
 
 .promo-text h3 {
-    font-size: 48px;
+    font-size: 4em;
     line-height: 55px;
 }
 
 .promo-text h6 {
-    font-size: 12px;
-    line-height: 21px;
+    font-size: 1.5em;
+    line-height: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: justify;
 }
 
 .promo-text-alt h3 {
@@ -1384,6 +1388,10 @@ fieldset h1 {
     padding-top: 100px;
 }
 
+.pad-top-third{
+    padding-top: 30px;
+}
+
 .pad-bottom {
     padding-bottom: 160px;
 }
@@ -1525,7 +1533,7 @@ fieldset h1 {
 }
 
 .dark {
-    color: #292929
+    color: #000000
 }
 
 .black {
@@ -1561,7 +1569,7 @@ fieldset h1 {
 }
 
 .font2 {
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Caviar';
 }
 
 .font3 {
@@ -1573,7 +1581,8 @@ fieldset h1 {
 }
 
 .font3bold {
-    font-family: 'AceSans_bold', sans-serif
+    font-family: 'Caviar_bold';
+    text-transform: uppercase;
 }
 
 .font3light {
@@ -1742,7 +1751,7 @@ nav.mastnav {
 
 body,
 p {
-    font-family: 'Pistara';
+    font-family: 'Caviar';
 }
 
 .tp-caption {
@@ -1778,9 +1787,20 @@ p {
     z-index: -1;
 }
 
+.m-v-ision{
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 25px;
+}
+.m-v-ision>h3{
+    font-family: "Caviar_bold";
+    font-size: larger;
+    letter-spacing: 0.1em;
+}
+
 .serv-2{
     padding: 20px;
-    font-family: 'Pistara';
+    font-family: 'Caviar';
     font-size: 1.5rem;
 }
 
