@@ -581,6 +581,7 @@
                         $(".info-gral-1").css("display","block");
                         $(".work-description-1").css("display","block");
                         $(".info-gral-1>h1").show("slide");
+                        $(".work-description-1>h5").show("drop");
                     })
                 break;
                 case "alejandro":
@@ -591,6 +592,7 @@
                         $(".info-gral-2").css("display","block");
                         $(".work-description-2").css("display","block");
                         $(".info-gral-2>h1").show("slide");
+                        $(".work-description-2>h5").show("drop");
                     })
                 break;
                 case "alex":
@@ -601,6 +603,7 @@
                         $(".info-gral-3").css("display","block");
                         $(".work-description-3").css("display","block");
                         $(".info-gral-3>h1").show("slide");
+                        $(".work-description-3>h5").show("slide");
                     })
                 break;
                 case "web":
@@ -611,6 +614,7 @@
                         $(".info-gral-4").css("display","block");
                         $(".work-description-4").css("display","block");
                         $(".info-gral-4>h1").show("slide");
+                        $(".work-description-4>h5").show("slide");
                     })
                 break;
             }
@@ -628,18 +632,22 @@
                     $(".info-gral-1").css("display","none");
                     $(".work-description-1").css("display","none");
                     $(".info-gral-1>h1").hide("drop");
+                    $(".work-description-1>h5").hide("fold");
                     //Team-2
                     $(".info-gral-2").css("display","none");
                     $(".work-description-2").css("display","none");
                     $(".info-gral-2>h1").hide("drop");
+                    $(".work-description-2>h5").hide("fold");
                     //Team-3
                     $(".info-gral-3").css("display","none");
                     $(".work-description-3").css("display","none");
                     $(".info-gral-3>h1").hide("drop");
+                    $(".work-description-3>h5").hide("fold");
                     //Team-4
                     $(".info-gral-4").css("display","none");
                     $(".work-description-4").css("display","none");
                     $(".info-gral-4>h1").hide("drop");
+                    $(".work-description-3>h5").hide("fold");
                 })
             }
         });

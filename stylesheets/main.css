@@ -1861,13 +1861,14 @@ p {
     z-index: 1;
 }
 
-.work-description-1, .work-description-2, .work-description-3, .work-description-4{
+.work-description-1>h5, .work-description-2>h5, .work-description-3>h5, .work-description-4>h5{
     letter-spacing: 0px;
     display: none;
-    position: absolute;
+    position: relative;
     padding-left: 2em;
     font-family: 'Caviar';
     z-index: 1;
+    font-size: 2em;
 }
 
 .hover-team{
