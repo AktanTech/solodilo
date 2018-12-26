@@ -647,7 +647,7 @@
                     $(".info-gral-4").css("display","none");
                     $(".work-description-4").css("display","none");
                     $(".info-gral-4>h1").hide("drop");
-                    $(".work-description-3>h5").hide("fold");
+                    $(".work-description-4>h5").hide("fold");
                 })
             }
         });
