@@ -1866,9 +1866,9 @@ p {
     display: none;
     position: relative;
     padding-left: 2em;
-    font-family: 'Caviar';
+    font-family: 'Caviar_bold';
     z-index: 1;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .hover-team{
