@@ -63,9 +63,9 @@ a:focus {
 
 .subtitle{
     letter-spacing: 0 !important;
-    font-family: 'Caviar_bitalic';
-    text-align: center;
-    font-size: 2.8em;
+    font-family: 'RNS-Sanz-Bold';
+    text-align: justify;
+    font-size: 2em;
     line-height: 1.3em;
 
 }
@@ -99,7 +99,7 @@ a:focus {
 }
 
 .liner {
-    width: 410px;
+    width: 330px;
     height: 10px;
     display: inline-block;
     margin-top: 10px;
@@ -160,11 +160,11 @@ a:focus {
 }
 
 .promo-text h6 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     line-height: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 2px;
     text-align: justify;
 }
@@ -1569,7 +1569,7 @@ fieldset h1 {
 }
 
 .font2 {
-    font-family: 'Caviar';
+    font-family: 'RNS-Sanz-Light';
 }
 
 .font3 {
@@ -1581,7 +1581,7 @@ fieldset h1 {
 }
 
 .font3bold {
-    font-family: 'Caviar_bold';
+    font-family: 'RNS-Sanz-Bold';
     text-transform: uppercase;
 }
 
@@ -1751,11 +1751,11 @@ nav.mastnav {
 
 body,
 p {
-    font-family: 'Caviar';
+    font-family: 'RNS-Sanz-Light';
 }
 
 .tp-caption {
-    font-family: 'AceSans_regular' !important;
+    font-family: 'RNS-Sanz' !important;
     font-size: 26px !important;
     border-radius: 12px !important;
     padding: 8px !important;
@@ -1788,20 +1788,24 @@ p {
 }
 
 .m-v-ision{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: justify;
     line-height: 25px;
 }
 .m-v-ision>h3{
-    font-family: "Caviar_bold";
-    font-size: larger;
+    font-family: "RNS-Sanz-Sbold";
+    font-size: large;
     letter-spacing: 0.1em;
 }
 
 .serv-2{
     padding: 20px;
-    font-family: 'Caviar';
+    font-family: 'RNS-Sanz';
     font-size: 1.5rem;
+}
+
+.serv-desc{
+    padding-top: 5em;
 }
 
 @media (max-width: 600px){
@@ -1837,28 +1841,44 @@ p {
 
 .info-gral-1>h1, .info-gral-2>h1, .info-gral-3>h1, .info-gral-4>h1{
     letter-spacing: 0px;
-    padding-left: 2em;
-    font-family: 'Caviar';
-    font-size: 5em;
+    padding-left: 1em;
+    font-family: 'RNS-Sanz-Sbold';
+    font-size: 4.9em;
     display: none;
     z-index: 1;
+    
+}
+
+.info-gral-4>h1{
+    letter-spacing: 0px;
+    padding-left: 1em;
+    font-family: 'RNS-Sanz-Sbold';
+    font-size: 4em;
+    display: none;
+    z-index: 1;
+    
 }
 
 .info-gral-1>h3, .info-gral-2>h3, .info-gral-3>h3, .info-gral-4>h3{
     letter-spacing: 0px;
-    padding-left: 2em;
-    font-family: 'Caviar_bitalic';
+    padding-left: 1.5em;
+    font-family: 'RNS-Sanz-Bold';
     font-size: 3em;
     z-index: 1;
+    display: none;
 }
 
 .info-gral-1>h4, .info-gral-2>h4, .info-gral-3>h4, .info-gral-4>h4{
     letter-spacing: 0px;
-    padding-left: 1em;
-    text-align: right;
-    font-family: 'Caviar_italic';
+    padding-left: 2.5em;
+    /* text-align: right; */
+    display: none;
+    font-family: 'RNS-Sanz-Light';
     font-size: 2em;
     z-index: 1;
+    padding-bottom: 1.5em;
+    padding-top: 0.5em;
+    
 }
 
 .work-description-1>h5, .work-description-2>h5, .work-description-3>h5, .work-description-4>h5{
@@ -1866,7 +1886,7 @@ p {
     display: none;
     position: relative;
     padding-left: 2em;
-    font-family: 'Caviar_bold';
+    font-family: 'RNS-Sanz-Sbold';
     z-index: 1;
     font-size: 1.5em;
 }

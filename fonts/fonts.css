@@ -14,6 +14,89 @@
 /*-------------------------------------------------------------------------------------*/
 /*1. SINKIN SANS FONT */
 /*-------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'RNS-Sanz';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Medium';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Sbold';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Bold';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Light';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lorin';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lorin_bold';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lorin_light';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lorin_extraBold';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face{
     font-family: 'Caviar';
     src: url('./caviar_dreams/caviar_dreams/CaviarDreams.ttf') format('truetype');
