@@ -1805,7 +1805,7 @@ p {
 }
 
 .serv-desc{
-    padding-top: 5em;
+    padding-top: 5em !important;
 }
 
 @media (max-width: 600px){

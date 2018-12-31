@@ -60,7 +60,7 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Lorin';
     src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.woff') format('woff'),
          url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.woff2') format('woff2'),
@@ -120,7 +120,7 @@
     src: url('./caviar_dreams/caviar_dreams/CaviarDreams_BoldItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face{
     font-family: 'Pistara';
