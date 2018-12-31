@@ -800,8 +800,8 @@
                         <div class="alert alert-error  error color-bg" id="fmsg">
                             <p class="white">Message should not be empty</p>
                         </div>
-                        <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data"
-                            method="post">
+                        <!-- FORM -->
+                        <form name="myform" id="contactForm" action="sendcontact.php" method="post">
                             <article>
                                 <input type="text" placeholder="Tu nombre" id="name" name="name" size="100" class="border-form white font4light animated"
                                     data-fx="fadeInUp">
@@ -815,10 +815,12 @@
                                     data-fx="fadeInUp"></textarea>
                                 <div class="btn-wrap  text-left">
                                     <button class="btn btn-ignite btn-ignite-color animated" data-fx="fadeInUp" id="submit"
-                                        name="submit" type="submit">Enviar mensaje</button>
+                                        name="submit" type="submit" >Enviar mensaje</button>
                                 </div>
                             </article>
                         </form>
+                        <!-- Success Msg -->
+                        <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i></div>    
                     </div>
                 </article>
             </div>
@@ -873,7 +875,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="javascripts/custom/main.js"></script>
     <script src="javascripts/custom/elements.js"></script>
-
+    <script src="send.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
 
     <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
