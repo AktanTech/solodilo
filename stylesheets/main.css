@@ -47,6 +47,10 @@ p {
     line-height: 40px;
 }
 
+.margin-top-4 {
+    margin-top: 7rem;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -65,7 +69,7 @@ a:focus {
     letter-spacing: 0 !important;
     font-family: 'RNS-Sanz-Bold';
     text-align: justify;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1.3em;
 
 }
@@ -1955,6 +1959,7 @@ p {
 .hover-team{
     height: inherit;
     z-index: 2;
+    cursor: pointer;
 }
 
 #sindy{
