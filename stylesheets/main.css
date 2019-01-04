@@ -1808,24 +1808,81 @@ p {
     padding-top: 5em !important;
 }
 
+@media (max-width:900px) and (min-width:601px){
+    .img-bg-full{
+        height: 16em !important;
+        width: 100%;
+        z-index: -1;
+    }
+    #sindy, #alejandro, #alex, #web{
+        padding: 0px !important;
+        margin: -0.2em 0px !important;
+    }
+}
+
 @media (max-width: 600px){
     .img-bg-full{
         height: 7.5em !important;
         width: 100%;
         z-index: -1;
     }   
-    #sindy{
-        margin: 0em 1.5em;
+    #sindy, #alejandro, #alex, #web{
+        padding: 0px !important;
+        margin: -0.2em 0px !important;
     }
-    #alejandro{
-        margin: 0em -2em;
+
+
+    .info-gral-1>h1, .info-gral-2>h1, .info-gral-3>h1, .info-gral-4>h1{
+        letter-spacing: 0px;
+        padding-left: 1em !important;
+        font-family: 'RNS-Sanz-Sbold';
+        font-size: 1.6em !important;
+        display: none;
+        z-index: 1;
+        
     }
-    #alex{
-        margin: 0em -3.3em;
+    
+    .info-gral-4>h1{
+        letter-spacing: 0px;
+        padding-left: 1em;
+        font-family: 'RNS-Sanz-Sbold';
+        font-size: 1em !important;
+        display: none;
+        z-index: 1;
+        
     }
-    #web{
-        margin: 0em 2em;
-    } 
+    
+    .info-gral-1>h3, .info-gral-2>h3, .info-gral-3>h3, .info-gral-4>h3{
+        letter-spacing: 0px;
+        padding-left: 1.5em !important;
+        font-family: 'RNS-Sanz-Bold';
+        font-size: 1em !important;
+        z-index: 1;
+        display: none;
+    }
+    
+    .info-gral-1>h4, .info-gral-2>h4, .info-gral-3>h4, .info-gral-4>h4{
+        letter-spacing: 0px;
+        padding-left: 2em !important;
+        /* text-align: right; */
+        display: none;
+        font-family: 'RNS-Sanz-Light';
+        font-size: 0.9em !important;
+        z-index: 1;
+        padding-bottom: 1em !important;
+        padding-top: 0.5em !important;
+        
+    }
+    
+    .work-description-1>h5, .work-description-2>h5, .work-description-3>h5, .work-description-4>h5{
+        letter-spacing: 0px;
+        display: none;
+        position: relative;
+        padding-left: 2em;
+        font-family: 'RNS-Sanz-Sbold';
+        z-index: 1;
+        font-size: 0.7em !important;
+    }
     #serv-espcif{
         display: block !important;
         text-align: left;
