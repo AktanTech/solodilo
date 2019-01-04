@@ -29,9 +29,9 @@ if($hade == ''){
         
     } else {
         // http_response_code(500);
-        $errorMessage = error_get_last()['message'];
+        // $errorMessage = error_get_last()['message'];
         // print_r(error_get_last());
-        echo $errorMessage;
+        echo error_get_last();
     }
 }
 else{
