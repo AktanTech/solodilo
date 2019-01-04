@@ -1,5 +1,6 @@
 <?php
-
+ini_set('display_errors', 1); 
+error_reporting(E_ALL); 
 // specify your email here
 
 $to = 'victorox100@gmail.com';
@@ -28,6 +29,8 @@ if($hade == ''){
         
     } else {
         // http_response_code(500);
+        $errorMessage = error_get_last()['message'];
+        print_r(error_get_last());
         echo "Oops! Something went wrong and we couldn't send your message.";
     }
 }
