@@ -501,7 +501,7 @@
             })
         })
 
-        $(".hover-team").click(function(evt){
+        $(".hover-team").hover(function(evt){
             var id_div = evt.currentTarget.id;
             var ancho = $(".info-gral-1").width();
             $(".hover-team").css("display","none");

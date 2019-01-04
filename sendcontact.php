@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL); 
 // specify your email here
 
-$to = 'victorox100@gmail.com';
+$to = 'hola@diloestudio.com';
 
 // Assigning data from $_POST array to variables
 if (isset($_POST['name'])) {$name = $_POST['name'];}
