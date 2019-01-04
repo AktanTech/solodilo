@@ -791,28 +791,28 @@
                 <article class="col-md-6 col-md-offset-3">
 
                     <div class="contact-item ">
-                        <div class="alert alert-error error color-bg" id="fname">
-                            <p class="white">Name must not be empty</p>
+                        <!-- <div class="alert alert-error error color-bg" id="fname">
+                            <p class="dark">Name must not be empty</p>
                         </div>
                         <div class="alert alert-error  error color-bg" id="fmail">
-                            <p class="white">Please provide a valid email</p>
+                            <p class="dark">Please provide a valid email</p>
                         </div>
                         <div class="alert alert-error  error color-bg" id="fmsg">
-                            <p class="white">Message should not be empty</p>
-                        </div>
+                            <p class="dark">Message should not be empty</p>
+                        </div> -->
                         <!-- FORM -->
                         <form name="myform" id="contactForm" action="sendcontact.php" method="post">
                             <article>
                                 <input type="text" placeholder="Tu nombre" id="name" name="name" size="100" class="border-form white font4light animated"
-                                    data-fx="fadeInUp">
+                                    data-fx="fadeInUp" required>
                             </article>
                             <article>
                                 <input type="text" placeholder="Email" name="email" id="email" size="30" class="border-form white font4light animated"
-                                    data-fx="fadeInUp">
+                                    data-fx="fadeInUp" required>
                             </article>
                             <article>
                                 <textarea placeholder="Tu mensaje" name="message" cols="40" rows="5" id="msg" class="border-form white font4light animated"
-                                    data-fx="fadeInUp"></textarea>
+                                    data-fx="fadeInUp" required></textarea>
                                 <input type="hidden" id="hade" name="hade">
                                 <div class="btn-wrap  text-left">
                                     <button class="btn btn-ignite btn-ignite-color animated" data-fx="fadeInUp" id="submit"

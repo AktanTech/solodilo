@@ -3,8 +3,8 @@ jQuery(function($) {
     var form = $('#contactForm');
 
     // Get the messages div.
-    var formMessages = $('#contact_message');
-
+    var formMessages = $('#contact_message');    
+    
     // Set up an event listener for the contact form.
     $(form).submit(function(event) {
         // Stop the browser from submitting the form.
@@ -33,7 +33,7 @@ jQuery(function($) {
             $('#name').val('');
             $('#email').val('');
             $('#hade').val('');
-            $('#message').val('');
+            $('#msg').val('');
         })
         .fail(function(data) {
             // Make sure that the formMessages div has the 'error' class.
