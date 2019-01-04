@@ -30,8 +30,8 @@ if($hade == ''){
     } else {
         // http_response_code(500);
         $errorMessage = error_get_last()['message'];
-        print_r(error_get_last());
-        echo "Oops! Something went wrong and we couldn't send your message.";
+        // print_r(error_get_last());
+        echo $errorMessage;
     }
 }
 else{
