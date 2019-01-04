@@ -1826,6 +1826,10 @@ p {
     #web{
         margin: 0em 2em;
     } 
+    #serv-espcif{
+        display: block !important;
+        text-align: left;
+    }
 }
 
 .img-bg-full{

@@ -23,7 +23,7 @@ there
 @media (max-width: 992px) {
     .liner {
         transform: rotate(0deg);
-        margin-bottom: 10rem;
+        margin-bottom: 4rem;
     }
     .container {
         max-width: 892px;
