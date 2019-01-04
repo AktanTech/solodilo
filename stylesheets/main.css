@@ -69,7 +69,7 @@ a:focus {
     letter-spacing: 0 !important;
     font-family: 'RNS-Sanz-Bold';
     text-align: justify;
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 1.3em;
 
 }
@@ -243,7 +243,13 @@ header.masthead {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 footer.mastfoot {
-    padding: 150px 0;
+    padding: 80px 0;
+}
+
+.foot-data li{
+    margin-left: -4rem;
+    list-style: none;
+    cursor: default
 }
 
 footer.mastfoot h5 {
