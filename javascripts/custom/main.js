@@ -490,14 +490,16 @@
         $(".icon-a").click(function(evt){
             var id_div = evt.currentTarget.offsetParent.id;
             var display_info = evt.currentTarget.hash;
+            console.log(evt);
+            
 
             $(`${display_info}`).on('show.bs.collapse', function () {
-                $(`#${id_div}`).removeClass("col-md-12");
-                $(`#${id_div}`).addClass("col-md-4");
+                $(`#${id_div}`).removeClass("col-md-offset-4");
+                $(`#${id_div}`).addClass("col-md-offset-2");
             })
             $(`${display_info}`).on('hidden.bs.collapse', function () {
-                $(`#${id_div}`).removeClass("col-md-4");
-                $(`#${id_div}`).addClass("col-md-12");
+                $(`#${id_div}`).removeClass("col-md-offset-2");
+                $(`#${id_div}`).addClass("col-md-offset-4");
             })
         })
 
