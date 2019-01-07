@@ -487,34 +487,35 @@
             }
         }); //ready
 
-        $(".icon-a").click(function(evt){
-            var id_div = evt.currentTarget.offsetParent.id;
-            var display_info = evt.currentTarget.hash;            
-
-            $(`${display_info}`).on('show.bs.collapse', function () {
+        $(".icon-serv-a").hover(function(evt){           
+            var id_div = evt.currentTarget.children[0].id;
+            var display_info = evt.currentTarget.children[1].id;            
+            $(`#${display_info}`).show();
+            if($(window).width() > 700){
                 $(`#${id_div}`).removeClass("col-md-offset-4");
                 $(`#${id_div}`).addClass("col-md-offset-2");
-            })
-            $(`${display_info}`).on('hidden.bs.collapse', function () {
+            }
+        }, function(evt){
+            var id_div = evt.currentTarget.children[0].id;
+            var display_info = evt.currentTarget.children[1].id;                   
+            $(`#${display_info}`).hide();
+            if($(window).width() > 700){
                 $(`#${id_div}`).removeClass("col-md-offset-2");
                 $(`#${id_div}`).addClass("col-md-offset-4");
-            })
+            }
         });
 
-        $(".icon-b").click(function(evt){
-            var id_div = evt.currentTarget.offsetParent.id;
-            var display_info = evt.currentTarget.hash;
-            console.log(evt);
-            
+        $(".icon-serv-b").hover(function(evt){ 
+            var id_div = evt.currentTarget.children[0].id;
+            var display_info = evt.currentTarget.children[1].id;            
+            $(`#${display_info}`).show();
+            $(`#${id_div}`).addClass("col-md-4");
 
-            $(`${display_info}`).on('show.bs.collapse', function () {
-                // $(`#${id_div}`).removeClass("col-md-offset-4");
-                $(`#${id_div}`).addClass("col-md-4");
-            })
-            $(`${display_info}`).on('hidden.bs.collapse', function () {
-                $(`#${id_div}`).removeClass("col-md-4");
-                // $(`#${id_div}`).addClass("col-md-offset-4");
-            })
+        }, function(evt){
+            var id_div = evt.currentTarget.children[0].id;
+            var display_info = evt.currentTarget.children[1].id;                   
+            $(`#${display_info}`).hide();
+            $(`#${id_div}`).removeClass("col-md-4");
         });
 
         $(".hover-team").hover(function(evt){

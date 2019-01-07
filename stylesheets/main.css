@@ -1897,6 +1897,10 @@ p {
         display: block !important;
         text-align: left;
     }
+
+    .serv-desc> .col-xs-12{
+        text-align: center !important;
+    }
 }
 
 .img-bg-full{
