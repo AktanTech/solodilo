@@ -32,6 +32,7 @@ jQuery(function($) {
             // Clear the form.
             $('#name').val('');
             $('#email').val('');
+            $('#telefono').val('');
             $('#hade').val('');
             $('#msg').val('');
         })
