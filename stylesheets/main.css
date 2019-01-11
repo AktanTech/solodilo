@@ -1918,7 +1918,7 @@ p {
     letter-spacing: 0px;
     padding-left: 1em;
     font-family: 'RNS-Sanz-Sbold';
-    font-size: 4.9em;
+    font-size: 4.5em;
     display: none;
     z-index: 1;
     
@@ -1945,11 +1945,11 @@ p {
 
 .info-gral-1>h4, .info-gral-2>h4, .info-gral-3>h4, .info-gral-4>h4{
     letter-spacing: 0px;
-    padding-left: 2.5em;
+    padding-left: 3em;
     /* text-align: right; */
     display: none;
     font-family: 'RNS-Sanz-Light';
-    font-size: 2em;
+    font-size: 1.5em;
     z-index: 1;
     padding-bottom: 1.5em;
     padding-top: 0.5em;
