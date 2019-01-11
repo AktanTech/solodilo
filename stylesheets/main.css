@@ -1765,8 +1765,11 @@ p {
 }
 
 .tp-caption {
+    font-family: 'RNS-Sanz' !important;
+    font-size: 26px !important;
     border-radius: 12px !important;
     padding: 8px !important;
+    /* background-color: rgba(255,255,255, 0.6) !important; */
     background-color:transparent!important;
 }
 
