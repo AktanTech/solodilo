@@ -596,10 +596,13 @@ nav.mastnav ul li {
 .services .service-block span {
     border-radius: 50%;
     display: inline-block;
-    font-size: 56px;
     height: 90px;
     text-align: center;
     width: 90px;
+}
+
+.text-icon-service{
+    font-size: 4.5em;
 }
 
 .service-esp-block{
