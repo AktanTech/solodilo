@@ -602,6 +602,15 @@ nav.mastnav ul li {
     width: 90px;
 }
 
+.service-esp-block{
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    height: 80px !important;
+    text-align: center;
+    width: 80px !important;
+}
+
 .services .service-block h3 {
     font-size: 18px;
     line-height: 25px;
