@@ -490,17 +490,19 @@
         $(".icon-serv-a").hover(function(evt){           
             var id_div = evt.currentTarget.children[0].id;
             var display_info = evt.currentTarget.children[1].id;            
-            $(`#${display_info}`).show();
+            $(`#${display_info}`).fadeIn(500)
             if($(window).width() > 700){
                 $(`#${id_div}`).removeClass("col-md-offset-4");
+                $(`#${id_div}`).animate({right: '4rem'}, 800);
                 $(`#${id_div}`).addClass("col-md-offset-2");
             }
         }, function(evt){
             var id_div = evt.currentTarget.children[0].id;
             var display_info = evt.currentTarget.children[1].id;                   
-            $(`#${display_info}`).hide();
-            if($(window).width() > 700){
+            $(`#${display_info}`).fadeOut(250)
+            if($(window).width() > 700){  
                 $(`#${id_div}`).removeClass("col-md-offset-2");
+                
                 $(`#${id_div}`).addClass("col-md-offset-4");
             }
         });
@@ -508,14 +510,16 @@
         $(".icon-serv-b").hover(function(evt){ 
             var id_div = evt.currentTarget.children[0].id;
             var display_info = evt.currentTarget.children[1].id;            
-            $(`#${display_info}`).show();
+            $(`#${display_info}`).fadeIn(500);
             $(`#${id_div}`).addClass("col-md-4");
+            $(`#${id_div}`).animate({right: '4rem'}, 800);
 
         }, function(evt){
             var id_div = evt.currentTarget.children[0].id;
             var display_info = evt.currentTarget.children[1].id;                   
-            $(`#${display_info}`).hide();
+            $(`#${display_info}`).fadeOut(250);
             $(`#${id_div}`).removeClass("col-md-4");
+            $(`#${id_div}`).animate({right: '0'}, 800);
         });
 
         $(".hover-team").hover(function(evt){
