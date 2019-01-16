@@ -1797,7 +1797,7 @@ p {
 
 .tp-caption {
     border-radius: 12px !important;
-    padding: 8px !important;
+    padding: 40px !important;
     /* background-color: rgba(255,255,255, 0.6) !important; */
     background-color:transparent!important;
 }
