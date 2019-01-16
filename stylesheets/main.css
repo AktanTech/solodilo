@@ -1699,6 +1699,16 @@ nav.mastnav {
     background-color: transparent;
 }
 
+#info-insp {
+    padding-right: 4rem;
+}
+
+.team i {
+    align-self: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
 .main-link {
     color: #292929
 }
@@ -1918,6 +1928,7 @@ p {
         z-index: 1;
         font-size: 0.7em !important;
     }
+
     #serv-espcif{
         display: block !important;
         text-align: left;
@@ -1963,7 +1974,7 @@ p {
     letter-spacing: 0px;
     padding-left: 1.5em;
     font-family: 'RNS-Sanz-Bold';
-    font-size: 3em;
+    font-size: 2em;
     z-index: 1;
     display: none;
 }
@@ -1986,6 +1997,8 @@ p {
     display: none;
     position: relative;
     padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 6em;
     font-family: 'RNS-Sanz-Sbold';
     z-index: 1;
     font-size: 1.5em;
