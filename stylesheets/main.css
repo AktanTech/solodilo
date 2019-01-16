@@ -387,6 +387,15 @@ nav.mastnav ul li {
 
 /*INTRO 01*/
 
+/*defaultimg*/
+.tp-bgimg {
+    background-size: contain !important;
+    width: 75% !important;
+    height: 75% !important;
+    margin: 8%;
+    margin-left: 15%;
+}
+
 .slotslide div {
     background-size: 50% !important;
 }
@@ -588,6 +597,10 @@ nav.mastnav ul li {
 }
 
 /*SERVICES*/
+
+.margin-left{
+    margin-right: -10rem;
+}
 
 .services .service-block {
     padding: 60px;
@@ -1704,8 +1717,7 @@ nav.mastnav {
 }
 
 .team i {
-    align-self: center;
-    font-size: 3rem;
+    margin-right: 2rem;
     margin-top: 2rem;
 }
 
@@ -1972,7 +1984,8 @@ p {
 
 .info-gral-1>h3, .info-gral-2>h3, .info-gral-3>h3, .info-gral-4>h3{
     letter-spacing: 0px;
-    padding-left: 1.5em;
+    padding-left: 2.1em;
+    padding-right: 0.8em;
     font-family: 'RNS-Sanz-Bold';
     font-size: 2em;
     z-index: 1;
@@ -1998,7 +2011,7 @@ p {
     position: relative;
     padding-left: 2em;
     padding-right: 2em;
-    margin-top: 6em;
+    margin-top: 8em;
     font-family: 'RNS-Sanz-Sbold';
     z-index: 1;
     font-size: 1.5em;
