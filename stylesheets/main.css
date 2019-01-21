@@ -391,7 +391,8 @@ nav.mastnav ul li {
 .tp-bgimg {
     background-size: contain !important;
     width: 75% !important;
-    height: 75% !important;
+    /* height: 75% !important; */
+    height: 50% !important;
     margin: 8%;
     margin-left: 15%;
 }
