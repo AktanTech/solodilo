@@ -492,11 +492,40 @@ nav.mastnav ul li {
 }
 
 .team-carousel-item {
-    padding: 250px 80px;
+    padding: 285px 80px;
+}
+
+.team-caps{
+    display: none;
+    position: absolute;
+}
+
+.imag{
+    padding: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* visibility: hidden;
+    display: none; */
+}
+
+.team-caps h1 {
+    text-transform: uppercase;
+    font-family: 'RNS-Sanz-Sbold';
+    /* letter-spacing: 0.1em; */
+}
+
+.team-caps h4 {
+    text-transform: uppercase;
+    font-family: 'RNS-Sanz-Light';
+    letter-spacing: 0.1em;
 }
 
 .team-caps h3 {
     text-transform: uppercase;
+    font-family: 'RNS-Sanz-Bold';
+    letter-spacing: 0.1em;
 }
 
 .team-caps p {
@@ -537,7 +566,7 @@ nav.mastnav ul li {
     line-height: 19px;
 }
 
-.team-carousel-item:hover .team-overlay {
+/* .team-carousel-item:hover .team-overlay {
     opacity: 1;
     -webkit-transition: all .4s linear;
     -moz-transition: all .8s linear;
@@ -554,7 +583,7 @@ nav.mastnav ul li {
     -ms-transition: all .8s linear;
     -o-transition: all .8s linear;
     transition: all .8s linear;
-}
+} */
 
 .team-social {
     list-style: none outside none;
@@ -1504,6 +1533,12 @@ fieldset h1 {
 }
 
 .img-bg {
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.img-bg-hover {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

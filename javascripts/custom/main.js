@@ -175,7 +175,8 @@
 
         //CAROUSEL
         $(".team-carousel").owlCarousel({
-            loop: true,
+            loop: false,
+            rewind: true,
             margin: 0,
             dots: true,
             nav: false,
@@ -493,9 +494,7 @@
             $(`#${display_info}`).show()
             if($(window).width() > 600){
                 $(`#${id_div}`).removeClass("col-md-offset-4");
-                //$(`#${id_div}`).animate({right: '4rem'}, 400);
                 $(`#${id_div}`).addClass("col-md-offset-1");
-                // $(`#${id_div}`).addClass("margin-left");
             }
         }, function(evt){
             var id_div = evt.currentTarget.children[0].id;
@@ -503,8 +502,6 @@
             $(`#${display_info}`).hide()
             if($(window).width() > 600){  
                 $(`#${id_div}`).removeClass("col-md-offset-1");
-                //$(`#${id_div}`).animate({right: '0rem'}, 400);
-                // $(`#${id_div}`).removeClass("margin-left");
                 $(`#${id_div}`).addClass("col-md-offset-4");
             }
         });
@@ -514,116 +511,232 @@
             var display_info = evt.currentTarget.children[1].id;            
             $(`#${display_info}`).show();
             $(`#${id_div}`).addClass("col-md-4 col-sm-4");
-            //$(`#${id_div}`).animate({right: '4rem'}, 400);
 
         }, function(evt){
             var id_div = evt.currentTarget.children[0].id;
             var display_info = evt.currentTarget.children[1].id;                   
             $(`#${display_info}`).hide();
             $(`#${id_div}`).removeClass("col-md-4 col-sm-4");
-            //$(`#${id_div}`).animate({right: '0'}, 400);
         });
 
-        $(".hover-team").hover(function(evt){
-            var id_div = evt.currentTarget.id;
-            var ancho = $(".info-gral-1").width();
-            $(".hover-team").css("display","none");
+        var memoDiv = new Array();
 
-            switch(id_div){
-                case "sindy":
-                    $("#full-team").fadeIn('slow',function(){
-                        $("#full-team").removeClass();
-                        $("#full-team").addClass("team-01-carousel-item-02 hover-contain img-bg-full");    
-                        $("#full-team").css("z-index","3");
-                        $(".info-gral-1").css("display","block");
-                        $(".work-description-1").css("display","block");
-                        $(".info-gral-1>h1").delay(500).show("slide");
-                        $(".info-gral-1>h4").delay(1000).show("slide");
-                        $(".info-gral-1>h3").delay(1500).show("slide");
-                        $(".work-description-1>h5").delay(1500).show("drop");
+        $(".team-carousel-item").dblclick(function(evt) {
+            var imgClass = evt.currentTarget.classList[1];
+            var viewActive = $(".owl-item.active" || ".owl-item.cloned.active");                                    
+            switch (imgClass) {
+               case 'team-01-carousel-item-01':
+                   $(evt.currentTarget).removeClass();
+                   $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-01-hover text-center img-bg-hover'); 
+                   var divA = "<h1>Sindy Tec</h1><h4>CEO Y DIRECTOR CREATIVO</h4><h3>'Al compromiso no le <br>importa como te sientas, <br>¡ve y hazlo!'<br><div><a href='https://www.instagram.com/sindy_teher/?hl=es-la' target='_blank'><i class='fab fa-instagram'></i></a><a href='https://www.facebook.com/Sindy-Teher-293837087909110/' target='_blank'><i style='font-size: 2.4rem;' class='fab fa-facebook-f'></i></a></div></h3>";
+                   var divB = "<h5>Me defino sin filtros, proactiva y terca. Agradecida totalmente de la vida, la oveja creativa de la familia y divertida.</h5>";           
+                   hoverIn(viewActive, memoDiv, divA, divB);
+                   break;
+
+                case 'team-01-carousel-item-02':
+                    $(evt.currentTarget).removeClass();
+                    $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-02-hover text-center img-bg-hover'); 
+                    var divA = '<h1>Alejandro Valera</h1><h4>SOCIO EJECUTIVO</h4><h3>"Encuentra una manera de resolverlo, osea ¡SOLUCIÓNALO!"<br><div><a href="https://www.instagram.com/alejandrovalera__/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/Alejandro-Valera-2237305619837723/" target="_blank"><i style="font-size: 2.4rem;" class="fab fa-facebook-f"></i></a></div></h3>';
+                    var divB = '<h5>Soy una persona auténtica, que te dice la verdad, me encanta el trato con la gente e ir por retos nuevos para cumplir con mi mision</h5>';
+                    hoverIn(viewActive, memoDiv, divA, divB);
+                    break;
+                case 'team-01-carousel-item-03':
+                   
+                    break;
+                case 'team-01-carousel-item-04':
+                   
+                    break;
+                case 'team-01-carousel-item-06':
+                   
+                    break;
+                case 'team-01-carousel-item-07':
+                   
+                    break;
+           }
+
+        }, null);
+
+        
+        
+        $(".team-carousel-item").hover(null,
+        function(evt) {
+            var imgClass = evt.currentTarget.classList[1];
+            var viewActive = $(".owl-item.active" || ".owl-item.cloned.active");
+            switch (imgClass) {
+               case 'team-01-carousel-item-01-hover':
+                   $(this).removeClass();
+                   $(this).addClass('team-carousel-item team-01-carousel-item-01 text-center img-bg');
+                   hoverOut(viewActive, memoDiv);
+                   break;
+
+                case 'team-01-carousel-item-02-hover':
+                    $(this).removeClass();
+                    $(this).addClass('team-carousel-item team-01-carousel-item-02 text-center img-bg');
+                    hoverOut(viewActive, memoDiv);
+                    break;
+                case 'team-01-carousel-item-03-hover':
+                   
+                    break;
+                case 'team-01-carousel-item-04':
+                   
+                    break;
+                case 'team-01-carousel-item-06':
+                   
+                    break;
+                case 'team-01-carousel-item-07':
+                   
+                    break;
+           }
+           memoDiv = new Array();     
+        });
+
+        function hoverIn($dato, $lista, $divA, $divB) {            
+            for (let i = 0; i < $dato.length; i++) {
+                const classText = $dato[i].firstChild.className;
+                
+                if (!(classText.indexOf("img-bg-hover") > -1)) {                                     
+                    var divNone =$dato[i];
+                    $lista.push(divNone.firstChild.className);             
+                    $(divNone.firstChild).removeClass();
+                    $(divNone.firstChild).addClass("team-carousel-item white-bg text-center img-bg");
+                    if ($lista.length == 1) {
+                        divNone.firstChild.firstElementChild.innerHTML = $divA;
+                    }
+                    if($lista.length == 2){
+                        divNone.firstChild.firstElementChild.innerHTML = $divB;
+                    }
+                    $(".team-caps").show(1000);
+                    $(".team-carousel").owlCarousel({
+                        mouseDrag: false,
+                        touchDrag: false,
                     })
-                break;
-                case "alejandro":
-                    $("#full-team").fadeIn('slow',function(){
-                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
-                        $("#full-team").addClass("team-01-carousel-item-03 hover-contain");
-                        $("#full-team").css("z-index","3");
-                        $(".info-gral-2").css("display","block");
-                        $(".work-description-2").css("display","block");
-                        $(".info-gral-2>h1").delay(500).show("slide");
-                        $(".info-gral-2>h4").delay(1000).show("slide");
-                        $(".info-gral-2>h3").delay(1500).show("slide");
-                        $(".work-description-2>h5").delay(1500).show("drop");
+                    
+                } 
+            }            
+        }
+
+        function hoverOut($dato, $lista) {
+            for (let i = 0; i < $dato.length; i++) {
+                const classText = $dato[i].firstChild.className;
+                if (classText.indexOf("white-bg") > -1) {
+                    var divNone = $dato[i];
+                    $(divNone.firstChild).removeClass();
+                    $(divNone.firstChild).addClass($lista.shift());              
+                    if ($lista.length == 1) {
+                        divNone.firstChild.firstElementChild.innerHTML = "";
+                    }
+                    if($lista.length == 2){
+                        divNone.firstChild.firstElementChild.innerHTML = "";
+                    }
+                    $(".team-caps").hide();
+                    $(".team-carousel").owlCarousel({
+                        mouseDrag: true,
+                        touchDrag: true,
                     })
-                break;
-                case "alex":
-                    $("#full-team").fadeIn('slow',function(){
-                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
-                        $("#full-team").addClass("team-01-carousel-item-04 hover-contain");
-                        $("#full-team").css("z-index","3");
-                        $(".info-gral-3").css("display","block");
-                        $(".work-description-3").css("display","block");
-                        $(".info-gral-3>h1").delay(500).show("slide");
-                        $(".info-gral-3>h4").delay(1000).show("slide");
-                        $(".info-gral-3>h3").delay(1500).show("slide");
-                        $(".work-description-3>h5").delay(1500).show("drop");
-                    })
-                break;
-                case "web":
-                    $("#full-team").fadeIn('slow',function(){
-                        $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
-                        $("#full-team").addClass("team-01-carousel-item-05 hover-contain");
-                        $("#full-team").css("z-index","3");
-                        $(".info-gral-4").css("display","block");
-                        $(".work-description-4").css("display","block");
-                        $(".info-gral-4>h1").delay(500).show("slide");
-                        $(".info-gral-4>h4").delay(1000).show("slide");
-                        $(".info-gral-4>h3").delay(1500).show("slide");
-                        $(".work-description-4>h5").delay(1500).show("drop");
-                    })
-                break;
+                } 
             }
+        }
+
+        // $(".hover-team").hover(function(evt){
+        //     var id_div = evt.currentTarget.id;
+        //     var ancho = $(".info-gral-1").width();
+        //     $(".hover-team").css("display","none");
+
+        //     switch(id_div){
+        //         case "sindy":
+        //             $("#full-team").fadeIn('slow',function(){
+        //                 $("#full-team").removeClass();
+        //                 $("#full-team").addClass("team-01-carousel-item-02 hover-contain img-bg-full");    
+        //                 $("#full-team").css("z-index","3");
+        //                 $(".info-gral-1").css("display","block");
+        //                 $(".work-description-1").css("display","block");
+        //                 $(".info-gral-1>h1").delay(500).show("slide");
+        //                 $(".info-gral-1>h4").delay(1000).show("slide");
+        //                 $(".info-gral-1>h3").delay(1500).show("slide");
+        //                 $(".work-description-1>h5").delay(1500).show("drop");
+        //             })
+        //         break;
+        //         case "alejandro":
+        //             $("#full-team").fadeIn('slow',function(){
+        //                 $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
+        //                 $("#full-team").addClass("team-01-carousel-item-03 hover-contain");
+        //                 $("#full-team").css("z-index","3");
+        //                 $(".info-gral-2").css("display","block");
+        //                 $(".work-description-2").css("display","block");
+        //                 $(".info-gral-2>h1").delay(500).show("slide");
+        //                 $(".info-gral-2>h4").delay(1000).show("slide");
+        //                 $(".info-gral-2>h3").delay(1500).show("slide");
+        //                 $(".work-description-2>h5").delay(1500).show("drop");
+        //             })
+        //         break;
+        //         case "alex":
+        //             $("#full-team").fadeIn('slow',function(){
+        //                 $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
+        //                 $("#full-team").addClass("team-01-carousel-item-04 hover-contain");
+        //                 $("#full-team").css("z-index","3");
+        //                 $(".info-gral-3").css("display","block");
+        //                 $(".work-description-3").css("display","block");
+        //                 $(".info-gral-3>h1").delay(500).show("slide");
+        //                 $(".info-gral-3>h4").delay(1000).show("slide");
+        //                 $(".info-gral-3>h3").delay(1500).show("slide");
+        //                 $(".work-description-3>h5").delay(1500).show("drop");
+        //             })
+        //         break;
+        //         case "web":
+        //             $("#full-team").fadeIn('slow',function(){
+        //                 $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
+        //                 $("#full-team").addClass("team-01-carousel-item-05 hover-contain");
+        //                 $("#full-team").css("z-index","3");
+        //                 $(".info-gral-4").css("display","block");
+        //                 $(".work-description-4").css("display","block");
+        //                 $(".info-gral-4>h1").delay(500).show("slide");
+        //                 $(".info-gral-4>h4").delay(1000).show("slide");
+        //                 $(".info-gral-4>h3").delay(1500).show("slide");
+        //                 $(".work-description-4>h5").delay(1500).show("drop");
+        //             })
+        //         break;
+        //     }
             
-        });
+        // });
 
-        $("#full-team").hover(null, function(){
-            if(!($("#full-team").hasClass("team-01-carousel-item-01"))){
-                $("#full-team").fadeOut(function(){
-                    $("#full-team").removeClass();
-                    $("#full-team").addClass("team-01-carousel-item-01 img-bg img-bg-full");
-                    $("#full-team").css("display","block");
-                    $(".hover-team").css("display","block");
-                    //Team-1
-                    $(".info-gral-1").css("display","none");
-                    $(".work-description-1").css("display","none");
-                    $(".info-gral-1>h1").hide("drop");
-                    $(".info-gral-1>h4").hide("drop");
-                    $(".info-gral-1>h3").hide("drop");
-                    $(".work-description-1>h5").hide("fold");
-                    //Team-2
-                    $(".info-gral-2").css("display","none");
-                    $(".work-description-2").css("display","none");
-                    $(".info-gral-2>h1").hide("drop");
-                    $(".info-gral-2>h4").hide("drop");
-                    $(".info-gral-2>h3").hide("drop");
-                    $(".work-description-2>h5").hide("fold");
-                    //Team-3
-                    $(".info-gral-3").css("display","none");
-                    $(".work-description-3").css("display","none");
-                    $(".info-gral-33>h1").hide("drop");
-                    $(".info-gral-3>h4").hide("drop");
-                    $(".info-gral-3>h3").hide("drop");
-                    $(".work-description-3>h5").hide("fold");
-                    //Team-4
-                    $(".info-gral-4").css("display","none");
-                    $(".work-description-4").css("display","none");
-                    $(".info-gral-4>h1").hide("drop");
-                    $(".info-gral-4>h4").hide("drop");
-                    $(".info-gral-4>h3").hide("drop");
-                    $(".work-description-4>h5").hide("fold");
-                })
-            }
-        });
+        // $("#full-team").hover(null, function(){
+        //     if(!($("#full-team").hasClass("team-01-carousel-item-01"))){
+        //         $("#full-team").fadeOut(function(){
+        //             $("#full-team").removeClass();
+        //             $("#full-team").addClass("team-01-carousel-item-01 img-bg img-bg-full");
+        //             $("#full-team").css("display","block");
+        //             $(".hover-team").css("display","block");
+        //             //Team-1
+        //             $(".info-gral-1").css("display","none");
+        //             $(".work-description-1").css("display","none");
+        //             $(".info-gral-1>h1").hide("drop");
+        //             $(".info-gral-1>h4").hide("drop");
+        //             $(".info-gral-1>h3").hide("drop");
+        //             $(".work-description-1>h5").hide("fold");
+        //             //Team-2
+        //             $(".info-gral-2").css("display","none");
+        //             $(".work-description-2").css("display","none");
+        //             $(".info-gral-2>h1").hide("drop");
+        //             $(".info-gral-2>h4").hide("drop");
+        //             $(".info-gral-2>h3").hide("drop");
+        //             $(".work-description-2>h5").hide("fold");
+        //             //Team-3
+        //             $(".info-gral-3").css("display","none");
+        //             $(".work-description-3").css("display","none");
+        //             $(".info-gral-33>h1").hide("drop");
+        //             $(".info-gral-3>h4").hide("drop");
+        //             $(".info-gral-3>h3").hide("drop");
+        //             $(".work-description-3>h5").hide("fold");
+        //             //Team-4
+        //             $(".info-gral-4").css("display","none");
+        //             $(".work-description-4").css("display","none");
+        //             $(".info-gral-4>h1").hide("drop");
+        //             $(".info-gral-4>h4").hide("drop");
+        //             $(".info-gral-4>h3").hide("drop");
+        //             $(".work-description-4>h5").hide("fold");
+        //         })
+        //     }
+        // });
     });
     // $(function ($)  : ends
     

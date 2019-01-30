@@ -9,11 +9,42 @@
     background-image: url('../images/imagenes_prueba_final/IMG_5294 2.jpg');
 }
 
+.white-bg{
+    background-color: white;
+}
+
 .team-01-carousel-item-01 {
-    background-image: url('../images/Equipo/Equipo/Fondo/Equipo_Linea.png');
+    background-image: url('../images/Equipo/Equipo-Final/Sindy.png');
 }
 
 .team-01-carousel-item-02 {
+    background-image: url('../images/Equipo/Equipo-Final/AV.png');
+}
+
+.team-01-carousel-item-03 {
+    background-image: url('../images/Equipo/Equipo-Final/AlexZ.png');
+}
+
+.team-01-carousel-item-04 {
+    background-image: url('../images/Equipo/Equipo-Final/ChicosWeb.png');
+}
+
+.team-01-carousel-item-05 {
+    background-image: url('../images/Equipo/Equipo-Final/silueta1.png');
+}
+
+.team-01-carousel-item-06 {
+    background-image: url('../images/Equipo/Equipo-Final/silueta2.png');
+}
+.team-01-carousel-item-01-hover {
+    background-image: url('../images/Equipo/Equipo/Sin_fondo/Sindy2.png');
+}
+
+.team-01-carousel-item-02-hover {
+    background-image: url('../images/Equipo/Equipo/Sin_fondo/Alex1.png');
+}
+/* 
+.team-01-carousel-item-02-hover {
     background-image: url('../images/Equipo/Equipo/Sin_fondo/Sindy2.png');
 }
 
@@ -27,7 +58,7 @@
 
 .team-01-carousel-item-05 {
     background-image: url('../images/Equipo/Equipo/Sin_fondo/A_V2.png');
-}
+} */
 
 .project-01-carousel-item-01 {
     background-image: url('../images/project/project01/01.jpg');
