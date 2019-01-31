@@ -498,6 +498,9 @@ nav.mastnav ul li {
 .team-caps{
     display: none;
     position: absolute;
+    margin-top: -9em;
+    margin-left: -5em;
+
 }
 
 .imag{
@@ -513,7 +516,7 @@ nav.mastnav ul li {
 .team-caps h1 {
     text-transform: uppercase;
     font-family: 'RNS-Sanz-Sbold';
-    /* letter-spacing: 0.1em; */
+    letter-spacing: 0.1em;
 }
 
 .team-caps h4 {
@@ -525,6 +528,11 @@ nav.mastnav ul li {
 .team-caps h3 {
     text-transform: uppercase;
     font-family: 'RNS-Sanz-Bold';
+    letter-spacing: 0.1em;
+}
+.team-caps h5 {
+    font-size: 1.6em;
+    font-family: 'RNS-Sanz-Sbold';
     letter-spacing: 0.1em;
 }
 
@@ -1898,6 +1906,7 @@ p {
     margin-top: -40px;
 }
 
+
 @media (max-width:900px) and (min-width:601px){
     .img-bg-full{
         height: 16em !important;
@@ -1984,6 +1993,11 @@ p {
 
     .serv-desc> .col-xs-12{
         text-align: center !important;
+    }
+
+    .team-caps{
+        display: none;
+        position: absolute;
     }
 }
 

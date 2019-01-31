@@ -520,9 +520,11 @@
         });
 
         var memoDiv = new Array();
+        var itemDiv;
 
         $(".team-carousel-item").dblclick(function(evt) {
             var imgClass = evt.currentTarget.classList[1];
+            itemDiv = evt.currentTarget;
             var viewActive = $(".owl-item.active" || ".owl-item.cloned.active");                                    
             switch (imgClass) {
                case 'team-01-carousel-item-01':
@@ -541,15 +543,24 @@
                     hoverIn(viewActive, memoDiv, divA, divB);
                     break;
                 case 'team-01-carousel-item-03':
-                   
+                    $(evt.currentTarget).removeClass();
+                    $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-03-hover text-center img-bg-hover'); 
+                    var divA = '<h1>Alex Zapata</h1><h4>JEFE DE PRODUCCION</h4><h3>"No estoy loco soy mentalmente divertido"<br><div><a href="https://www.instagram.com/aljozaso/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/aljozaso" target="_blank"><i style="font-size: 2.4rem;" class="fab fa-facebook-f"></i></a></div></h3>';
+                    var divB = '<h5>Soy un hombre divertido, creativo, amiguero, empático, soñador. La vida me ha dado la fortuna rodearme de gente que me ama. Amante de los deportes y el cine.</h5>';
+                    hoverIn(viewActive, memoDiv, divA, divB);
                     break;
                 case 'team-01-carousel-item-04':
+                    $(evt.currentTarget).removeClass();
+                    $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-04-hover text-center img-bg-hover'); 
+                    $(evt.currentTarget).css("background-size","contain !important");
+                    var divA = '<h1>Armando Carvajal & Victor Perera</h1><h4>DESARROLLO WEB</h4><h3>"Siempre innovando y hacia adelante"<br><div><a href="https://www.instagram.com/armando.carvajal.142/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/armando.carvajal.142" target="_blank"><i style="font-size: 2.4rem;" class="fab fa-facebook-f"></i></a></div></h3>';
+                    var divB = '<h5>Una pareja profesional y única con extensos conocimientos de programación, gestión de proyectos de software y diseño web. Amantes de la tecnología y de los retos</h5><h3><br><div><a href="https://www.instagram.com/vic_rpr/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/victor.raul2" target="_blank"><i style="font-size: 2.4rem;" class="fab fa-facebook-f"></i></a></div></h3>';
+                    hoverIn(viewActive, memoDiv, divA, divB);
+                    break;
+                case 'team-01-carousel-item-05':
                    
                     break;
                 case 'team-01-carousel-item-06':
-                   
-                    break;
-                case 'team-01-carousel-item-07':
                    
                     break;
            }
@@ -558,36 +569,41 @@
 
         
         
-        $(".team-carousel-item").hover(null,
+        $(".team-carousel").mouseleave(
         function(evt) {
-            var imgClass = evt.currentTarget.classList[1];
+            var imgClass = itemDiv.classList[1];
             var viewActive = $(".owl-item.active" || ".owl-item.cloned.active");
             switch (imgClass) {
                case 'team-01-carousel-item-01-hover':
-                   $(this).removeClass();
-                   $(this).addClass('team-carousel-item team-01-carousel-item-01 text-center img-bg');
+                   $(itemDiv).removeClass();
+                   $(itemDiv).addClass('team-carousel-item team-01-carousel-item-01 text-center img-bg');
                    hoverOut(viewActive, memoDiv);
                    break;
 
                 case 'team-01-carousel-item-02-hover':
-                    $(this).removeClass();
-                    $(this).addClass('team-carousel-item team-01-carousel-item-02 text-center img-bg');
+                    $(itemDiv).removeClass();
+                    $(itemDiv).addClass('team-carousel-item team-01-carousel-item-02 text-center img-bg');
                     hoverOut(viewActive, memoDiv);
                     break;
                 case 'team-01-carousel-item-03-hover':
-                   
+                    $(itemDiv).removeClass();
+                    $(itemDiv).addClass('team-carousel-item team-01-carousel-item-03 text-center img-bg');
+                    hoverOut(viewActive, memoDiv);
                     break;
-                case 'team-01-carousel-item-04':
+                case 'team-01-carousel-item-04-hover':
+                    $(itemDiv).removeClass();
+                    $(itemDiv).addClass('team-carousel-item team-01-carousel-item-04 text-center img-bg');
+                    hoverOut(viewActive, memoDiv);
+                    break;
+                case 'team-01-carousel-item-05':
                    
                     break;
                 case 'team-01-carousel-item-06':
                    
                     break;
-                case 'team-01-carousel-item-07':
-                   
-                    break;
            }
-           memoDiv = new Array();     
+           memoDiv = new Array();  
+           itemDiv = "";
         });
 
         function hoverIn($dato, $lista, $divA, $divB) {            
@@ -621,13 +637,9 @@
                 if (classText.indexOf("white-bg") > -1) {
                     var divNone = $dato[i];
                     $(divNone.firstChild).removeClass();
-                    $(divNone.firstChild).addClass($lista.shift());              
-                    if ($lista.length == 1) {
-                        divNone.firstChild.firstElementChild.innerHTML = "";
-                    }
-                    if($lista.length == 2){
-                        divNone.firstChild.firstElementChild.innerHTML = "";
-                    }
+                    $(divNone.firstChild).addClass($lista.shift());      
+                    divNone.firstChild.firstElementChild.innerHTML = "";                            
+                    console.log(divNone.firstChild.firstElementChild);
                     $(".team-caps").hide();
                     $(".team-carousel").owlCarousel({
                         mouseDrag: true,
