@@ -499,7 +499,8 @@ nav.mastnav ul li {
     display: none;
     position: absolute;
     margin-top: -9em;
-    margin-left: -5em;
+    margin-left: -2em;
+    margin-right: 2em;
 
 }
 
