@@ -2000,6 +2000,12 @@ p {
         display: none;
         position: absolute;
     }
+
+    .img-bg-hover {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 }
 
 .img-bg-full{
