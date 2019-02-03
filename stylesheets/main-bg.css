@@ -30,11 +30,11 @@
 }
 
 .team-01-carousel-item-05 {
-    background-image: url('../images/Equipo/Equipo-Final/silueta1.png');
+    background-image: url('../images/Equipo/Equipo-Final/Mariel.png');
 }
 
 .team-01-carousel-item-06 {
-    background-image: url('../images/Equipo/Equipo-Final/silueta2.png');
+    background-image: url('../images/Equipo/Equipo-Final/Nao.png');
 }
 .team-01-carousel-item-01-hover {
     background-image: url('../images/Equipo/Equipo/Sin_fondo/Sindy2.png');
@@ -49,6 +49,14 @@
 .team-01-carousel-item-04-hover {
     background-image: url('../images/Equipo/Equipo/Sin_fondo/A_V2.png');
     background-size: contain !important;
+}
+
+.team-01-carousel-item-05-hover {
+    background-image: url('../images/Equipo/Equipo-Final/Mariel2.png');
+}
+
+.team-01-carousel-item-06-hover {
+    background-image: url('../images/Equipo/Equipo-Final/Nao2.png');
 }
 /* 
 .team-01-carousel-item-02-hover {

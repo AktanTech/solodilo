@@ -2001,8 +2001,27 @@ p {
         position: absolute;
     }
 
+    #team-info{
+        display: none;
+    }
+
+    #team-info h1{
+        font-family: "RNS-Sanz-Sbold";
+        text-align: center;
+    }
+
+    #team-info h4{
+        font-family: "RNS-Sanz-Light";
+        text-align: center;
+    }
+
+    #team-info h3{
+        font-family: "RNS-Sanz-Sbold";
+        text-align: center;
+    }
+
     .img-bg-hover {
-        background-size: contain;
+        background-size: contain !important;
         background-position: center center;
         background-repeat: no-repeat;
     }
@@ -2116,4 +2135,9 @@ input::-webkit-inner-spin-button {
 .pad-footer{
     padding-bottom: 30px;
     padding-top: 30px;
+}
+
+#team-info{
+    display: none;
+    /* visibility: hidden; */
 }
