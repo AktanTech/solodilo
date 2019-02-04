@@ -522,7 +522,7 @@
         var memoDiv = new Array();
         var itemDiv;
 
-        if(window.width >600){
+        if($(window).width() >600){
 
             $(".team-carousel-item").dblclick(function(evt) {
                 var imgClass = evt.currentTarget.classList[1];
