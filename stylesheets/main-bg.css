@@ -37,17 +37,17 @@
     background-image: url('../images/Equipo/Equipo-Final/Nao.png');
 }
 .team-01-carousel-item-01-hover {
-    background-image: url('../images/Equipo/Equipo/Sin_fondo/Sindy2.png');
+    background-image: url('../images/Equipo/Equipo/Fondo/Sindy2.png');
 }
 
 .team-01-carousel-item-02-hover {
-    background-image: url('../images/Equipo/Equipo/Sin_fondo/Alex1.png');
+    background-image: url('../images/Equipo/Equipo/Fondo/Alex1.png');
 }
 .team-01-carousel-item-03-hover {
     background-image: url('../images/Equipo/Equipo/Sin_fondo/Zapata2.1.png');
 }
 .team-01-carousel-item-04-hover {
-    background-image: url('../images/Equipo/Equipo/Sin_fondo/A_V2.png');
+    background-image: url('../images/Equipo/Equipo/Fondo/A_V2.png');
     background-size: contain !important;
 }
 
