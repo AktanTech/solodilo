@@ -2003,6 +2003,7 @@ p {
 
     #team-info{
         display: none;
+        margin-bottom:  -8em;
     }
 
     #team-info h1{
