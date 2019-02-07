@@ -22,7 +22,17 @@
     $('html, body').css('width', vW)
 
     if (vW <= 800) {
+      // Cambio de imagen
       $('#carruselImage').attr('src', './images/featured/ParaMovil.gif')
+
+      // Frase de Slider
+      $('.slidePhrase').attr('data-transform_out', 'opacity:0;s:300;s:300;')
+      $('.slidePhrase').attr('data-start', '250')
+      $('.slidePhrase').attr('data-end', '2720')
+
+      // Letras de Slider
+      $('.slideLetter').attr('data-start', '3000')
+      $('.slideLetter').attr('data-end', '5720')
     }
 
     /* Equal Heights JS by Designova */
