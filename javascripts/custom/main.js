@@ -21,6 +21,10 @@
     $('.quarterheight').css('height', vH - vH / 6)
     $('html, body').css('width', vW)
 
+    if (vW <= 800) {
+      $('#carruselImage').attr('src', './images/featured/ParaMovil.gif')
+    }
+
     /* Equal Heights JS by Designova */
     $.fn.setAllToMaxHeight = function () {
       return this.css({ 'height': '' }).height(Math.max.apply(this, $.map(this, function (e) { return $(e).height() })))
@@ -512,7 +516,7 @@
     var isDrag = false
 
     if ($(window).width() > 600) {
-      $('.team-carousel-item').dblclick(function (evt) {
+      $('.team-carousel-item').click(function (evt) {
         isDrag = false
         var imgClass = evt.currentTarget.classList[1]
         itemDiv = evt.currentTarget
