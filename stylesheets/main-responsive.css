@@ -12,7 +12,7 @@ there
 
 @media (max-width: 1200px) {}
 
-@media( min-width: 992px) {
+@media(min-width: 992px) {
     .lin {
         width: 50% !important;
     }
@@ -25,15 +25,18 @@ there
         transform: rotate(0deg);
         margin-bottom: 4rem;
     }
+
     .container {
         max-width: 892px;
         padding-left: 50px;
         padding-right: 50px;
     }
+
     .text-left,
     .text-right {
         text-align: center;
     }
+
     .img-responsive {
         display: inline-block;
     }
@@ -42,6 +45,35 @@ there
 /* Larger than tablet */
 
 @media (max-width: 800px) {
+
+    #team-info {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    #team-info>h1 {
+        font-size: 4rem;
+    }
+
+    #team-info>h4 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    #team-info>h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    #team-info>h5 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-family: 'RNS-Sanz-Light';
+    }
+    #team-info>i{
+        font-size: 2rem !important;
+    }
+
     .rev_slider,
     .fullwidthabanner,
     .revslider-initialised,
@@ -49,22 +81,27 @@ there
     .tp-fullwidth-forcer {
         height: 327px !important;
     }
+
     .tp-parallax-wrap {
         top: 0px !important;
         left: 0px !important;
     }
+
     .intro07,
     .tp-bgimg {
         background-size: contain !important;
     }
+
     .hidden {
         display: block !important;
     }
+
     .rev_slider_wrapper,
     .fullwidthbanner-container {
         background-color: rgb(255, 255, 255, 0) !important;
         height: 0 !important;
     }
+
     .tp-caption {
         margin-left: -15px;
         font-size: 12px !important;
@@ -72,25 +109,30 @@ there
         max-height: 40rem !important;
         min-width: 36rem !important;
     }
+
     .tp-mask-wrap {
         width: 36rem !important;
     }
+
     .container {
         margin-top: 0 !important;
         max-width: 600px;
         padding-left: 100px;
         padding-right: 100px;
     }
+
     .prhaseUp {
         margin-top: 4rem;
         line-height: 40px !important;
         font-size: 24px;
     }
+
     .prhaseDown {
         margin-top: 48rem !important;
         line-height: 40px !important;
         font-size: 24px;
     }
+
     .lettersUp {
         margin-top: 16rem;
         font-size: 50px !important;
@@ -115,25 +157,33 @@ there
         margin-top: 8rem;
         font-size: 50px !important;
     }
+
     .lettersDown_2 {
         margin-top: 18rem;
         font-size: 50px !important;
     }
+
     .lettersDown_3 {
         margin-top: 28rem;
         font-size: 50px !important;
     }
+
     .lettersDown_4 {
         margin-top: 38rem;
         font-size: 50px !important;
     }
-    #intro, .forcefullwidth_wrapper_tp_banner, .tp-revslider-mainul {
+
+    #intro,
+    .forcefullwidth_wrapper_tp_banner,
+    .tp-revslider-mainul {
         height: 64rem !important;
     }
 
-    .tp-revslider-mainul>li, .tp-simpleresponsive>ul>li {
+    .tp-revslider-mainul>li,
+    .tp-simpleresponsive>ul>li {
         height: 64rem;
     }
+
     .text-left,
     .text-right,
     .mastfoot,
@@ -141,57 +191,73 @@ there
     .services-item {
         text-align: center;
     }
+
     .img-responsive {
         display: inline-block;
     }
+
     .works-masonry-container .works-item {
         width: 100% !important;
     }
+
     .page-section {
         padding: 100px 0;
     }
+
     .add-top {
         margin-top: 100px;
     }
+
     .add-top-half {
         margin-top: 50px;
     }
+
     .add-bottom {
         margin-bottom: 100px;
     }
+
     .add-bottom-half {
         margin-bottom: 50px;
     }
+
     .pad-top {
         padding-top: 100px;
     }
+
     .pad-top-half {
         padding-top: 50px;
     }
+
     .pad-bottom {
         padding-bottom: 100px;
     }
+
     .pad-bottom-half {
         padding-bottom: 50px;
     }
+
     .main-link {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 21px;
     }
+
     .sub-menu a {
         font-size: 12px;
         letter-spacing: normal;
         line-height: 19px;
     }
+
     .menu-notification span {
         position: fixed;
         top: 5px;
         right: 20px;
     }
+
     nav.mastnav {
         padding: 30px;
     }
+
     .menu-close-notification span {
         position: fixed;
         top: 120px;
@@ -201,12 +267,14 @@ there
         margin-left: -40px;
         font-size: 36px;
     }
+
     .promo-text-alt h3>span,
     .clientele h3,
     .project-page-head h3 span {
         font-size: 14px;
         line-height: 21px;
     }
+
     .main-heading,
     .promo-text-alt h3,
     .team-caps h3,
@@ -216,50 +284,63 @@ there
         font-size: 20px;
         line-height: 27px;
     }
+
     .caption-stamp {
         padding: 10px;
         margin-right: 0;
         margin-bottom: 30px;
     }
+
     .elements-counter {
         display: block;
         width: 100%;
         text-align: center;
     }
+
     .elements-counter .number,
     .journal h5 {
         font-size: 28px;
         line-height: 35px;
         margin-top: 30px;
     }
+
     .elements-counter-wrap .subject {
         margin-top: 10px;
     }
+
     .services .service-block {
         padding: 40px 20px;
         text-align: center;
     }
+
     .services .service-block span {
         display: inline-block;
     }
+
     .feature-block {
         padding: 20px;
     }
+
     .works-filter-panel {
         padding: 30px 0;
     }
+
     .works-filter li {
         display: block;
     }
+
     .works-masonry-container .works-item {
         width: 50% !important;
     }
+
     .contact-item {
         padding: 20px 40px;
     }
+
     footer.mastfoot {
         padding: 80px 0;
     }
+
     footer.mastfoot h5 {
         font-size: 12px;
         line-height: 19px;
@@ -304,51 +385,65 @@ there
         padding-left: 40px;
         padding-right: 40px;
     }
+
     .page-section {
         padding: 100px 0;
     }
+
     .add-top {
         margin-top: 100px;
     }
+
     .add-top-half {
         margin-top: 50px;
     }
+
     .add-bottom {
         margin-bottom: 100px;
     }
+
     .add-bottom-half {
         margin-bottom: 50px;
     }
+
     .pad-top {
         padding-top: 100px;
     }
+
     .pad-top-half {
         padding-top: 50px;
     }
+
     .pad-bottom {
         padding-bottom: 100px;
     }
+
     .pad-bottom-half {
         padding-bottom: 50px;
     }
+
     .main-link {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 21px;
     }
+
     .sub-menu a {
         font-size: 12px;
         letter-spacing: normal;
         line-height: 19px;
     }
+
     .menu-notification span {
         position: fixed;
         top: 5px;
         right: 20px;
     }
+
     nav.mastnav {
         padding: 30px;
     }
+
     .menu-close-notification span {
         position: fixed;
         top: 120px;
@@ -358,12 +453,14 @@ there
         margin-left: -40px;
         font-size: 36px;
     }
+
     .promo-text-alt h3>span,
     .clientele h3,
     .project-page-head h3 span {
         font-size: 14px;
         line-height: 21px;
     }
+
     .main-heading,
     .promo-text-alt h3,
     .team-caps h3,
@@ -373,50 +470,63 @@ there
         font-size: 20px;
         line-height: 27px;
     }
+
     .caption-stamp {
         padding: 10px;
         margin-right: 0;
         margin-bottom: 30px;
     }
+
     .elements-counter {
         display: block;
         width: 100%;
         text-align: center;
     }
+
     .elements-counter .number,
     .journal h5 {
         font-size: 28px;
         line-height: 35px;
         margin-top: 30px;
     }
+
     .elements-counter-wrap .subject {
         margin-top: 10px;
     }
+
     .services .service-block {
         padding: 40px 20px;
         text-align: center;
     }
+
     .services .service-block span {
         display: inline-block;
     }
+
     .feature-block {
         padding: 20px;
     }
+
     .works-filter-panel {
         padding: 30px 0;
     }
+
     .works-filter li {
         display: block;
     }
+
     .works-masonry-container .works-item {
         width: 100% !important;
     }
+
     .contact-item {
         padding: 20px 40px;
     }
+
     footer.mastfoot {
         padding: 80px 0;
     }
+
     footer.mastfoot h5 {
         font-size: 12px;
         line-height: 19px;

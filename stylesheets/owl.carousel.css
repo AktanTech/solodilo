@@ -248,7 +248,14 @@
     background: none repeat scroll 0 0 #222;
 }
 
+.owl-dots {
+  display: none !important;
+}
+
 /*EDITED BY DESIGNOVA : Customized Controls*/
+.owl-prev, .owl-next {
+  display: block !important;
+}
 .owl-prev{
   position: absolute;
   width: 50px;
