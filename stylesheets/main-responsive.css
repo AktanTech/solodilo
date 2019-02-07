@@ -55,10 +55,7 @@ there
     }
     .intro07,
     .tp-bgimg {
-        background-size: -1% !important;
-    }
-    .defaultimg {
-        margin-top: 24rem;
+        background-size: contain !important;
     }
     .hidden {
         display: block !important;

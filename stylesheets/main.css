@@ -391,6 +391,16 @@ nav.mastnav ul li {
 .tp-bgimg {
     background-size: cover !important;
     width: 100% !important;
+    /*width: 75% !important;
+    /* height: 75% !important; */
+    /*height: 50% !important;
+    /*margin: 8%;
+    /*margin-left: 15%; */
+}
+
+#rev_slider_1_1>div {
+    background-size: cover !important;
+    width: 100%;
 }
 
 .slotslide div {
