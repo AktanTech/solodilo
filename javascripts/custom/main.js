@@ -314,7 +314,7 @@
         e.sliderLayout = 'fullwidth'
         if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
           f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
-        }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), e.sliderLayout == 'fullscreen') {
+        }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), e.sliderLayout === 'fullscreen') {
           var u = (e.c.width(), jQuery(window).height())
           if (void 0 != e.fullScreenOffsetContainer) {
             var c = e.fullScreenOffsetContainer.split(',')
@@ -759,106 +759,6 @@
         $('#team-info').hide()
       })
     }
-    // $(".hover-team").hover(function(evt){
-    //     var id_div = evt.currentTarget.id;
-    //     var ancho = $(".info-gral-1").width();
-    //     $(".hover-team").css("display","none");
-
-    //     switch(id_div){
-    //         case "sindy":
-    //             $("#full-team").fadeIn('slow',function(){
-    //                 $("#full-team").removeClass();
-    //                 $("#full-team").addClass("team-01-carousel-item-02 hover-contain img-bg-full");
-    //                 $("#full-team").css("z-index","3");
-    //                 $(".info-gral-1").css("display","block");
-    //                 $(".work-description-1").css("display","block");
-    //                 $(".info-gral-1>h1").delay(500).show("slide");
-    //                 $(".info-gral-1>h4").delay(1000).show("slide");
-    //                 $(".info-gral-1>h3").delay(1500).show("slide");
-    //                 $(".work-description-1>h5").delay(1500).show("drop");
-    //             })
-    //         break;
-    //         case "alejandro":
-    //             $("#full-team").fadeIn('slow',function(){
-    //                 $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
-    //                 $("#full-team").addClass("team-01-carousel-item-03 hover-contain");
-    //                 $("#full-team").css("z-index","3");
-    //                 $(".info-gral-2").css("display","block");
-    //                 $(".work-description-2").css("display","block");
-    //                 $(".info-gral-2>h1").delay(500).show("slide");
-    //                 $(".info-gral-2>h4").delay(1000).show("slide");
-    //                 $(".info-gral-2>h3").delay(1500).show("slide");
-    //                 $(".work-description-2>h5").delay(1500).show("drop");
-    //             })
-    //         break;
-    //         case "alex":
-    //             $("#full-team").fadeIn('slow',function(){
-    //                 $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
-    //                 $("#full-team").addClass("team-01-carousel-item-04 hover-contain");
-    //                 $("#full-team").css("z-index","3");
-    //                 $(".info-gral-3").css("display","block");
-    //                 $(".work-description-3").css("display","block");
-    //                 $(".info-gral-3>h1").delay(500).show("slide");
-    //                 $(".info-gral-3>h4").delay(1000).show("slide");
-    //                 $(".info-gral-3>h3").delay(1500).show("slide");
-    //                 $(".work-description-3>h5").delay(1500).show("drop");
-    //             })
-    //         break;
-    //         case "web":
-    //             $("#full-team").fadeIn('slow',function(){
-    //                 $("#full-team").removeClass("team-01-carousel-item-01 img-bg");
-    //                 $("#full-team").addClass("team-01-carousel-item-05 hover-contain");
-    //                 $("#full-team").css("z-index","3");
-    //                 $(".info-gral-4").css("display","block");
-    //                 $(".work-description-4").css("display","block");
-    //                 $(".info-gral-4>h1").delay(500).show("slide");
-    //                 $(".info-gral-4>h4").delay(1000).show("slide");
-    //                 $(".info-gral-4>h3").delay(1500).show("slide");
-    //                 $(".work-description-4>h5").delay(1500).show("drop");
-    //             })
-    //         break;
-    //     }
-
-    // });
-
-    // $("#full-team").hover(null, function(){
-    //     if(!($("#full-team").hasClass("team-01-carousel-item-01"))){
-    //         $("#full-team").fadeOut(function(){
-    //             $("#full-team").removeClass();
-    //             $("#full-team").addClass("team-01-carousel-item-01 img-bg img-bg-full");
-    //             $("#full-team").css("display","block");
-    //             $(".hover-team").css("display","block");
-    //             //Team-1
-    //             $(".info-gral-1").css("display","none");
-    //             $(".work-description-1").css("display","none");
-    //             $(".info-gral-1>h1").hide("drop");
-    //             $(".info-gral-1>h4").hide("drop");
-    //             $(".info-gral-1>h3").hide("drop");
-    //             $(".work-description-1>h5").hide("fold");
-    //             //Team-2
-    //             $(".info-gral-2").css("display","none");
-    //             $(".work-description-2").css("display","none");
-    //             $(".info-gral-2>h1").hide("drop");
-    //             $(".info-gral-2>h4").hide("drop");
-    //             $(".info-gral-2>h3").hide("drop");
-    //             $(".work-description-2>h5").hide("fold");
-    //             //Team-3
-    //             $(".info-gral-3").css("display","none");
-    //             $(".work-description-3").css("display","none");
-    //             $(".info-gral-33>h1").hide("drop");
-    //             $(".info-gral-3>h4").hide("drop");
-    //             $(".info-gral-3>h3").hide("drop");
-    //             $(".work-description-3>h5").hide("fold");
-    //             //Team-4
-    //             $(".info-gral-4").css("display","none");
-    //             $(".work-description-4").css("display","none");
-    //             $(".info-gral-4>h1").hide("drop");
-    //             $(".info-gral-4>h4").hide("drop");
-    //             $(".info-gral-4>h3").hide("drop");
-    //             $(".work-description-4>h5").hide("fold");
-    //         })
-    //     }
-    // });
   })
   // $(function ($)  : ends
 })()
