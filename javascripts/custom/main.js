@@ -524,6 +524,7 @@
     var idDiv = new Array()
     var itemDiv = ''
     var isDrag = false
+    var cli = 0;
 
     if ($(window).width() > 600) {
       $('.team-carousel-item').click(function (evt) {
@@ -565,7 +566,7 @@
 
           memoDiv = new Array()
           idDiv = new Array()
-          itemDiv = ''
+          itemDiv = '';
         }
         else{
         isDrag = false
@@ -730,7 +731,9 @@
         $('.team-caps').hide()
       }
     } else {
-      $('.team-carousel-item').hover(function (evt) {
+      $('.team-carousel-item').click(function (evt) {        
+        cli++;
+        if(cli==1){
         var divEvt = evt.currentTarget.classList[1]
         switch (divEvt) {
           case 'team-01-carousel-item-01':
@@ -776,10 +779,9 @@
             break
         }
         $('#team-info').show(1000)
-      }, function (evt) {
+      }
+      else{
         var divEvt = evt.currentTarget.classList[1]
-        console.log(divEvt)
-
         switch (divEvt) {
           case 'team-01-carousel-item-01-hover':
             $(evt.currentTarget).removeClass()
@@ -809,6 +811,8 @@
         }
         $('#team-info').html('')
         $('#team-info').hide()
+        cli = 0;
+      }       
       })
     }
   })
