@@ -527,6 +527,47 @@
 
     if ($(window).width() > 600) {
       $('.team-carousel-item').click(function (evt) {
+        if (memoDiv.length > 0) {
+          var imgClass = itemDiv.classList[1]
+
+          var viewActive = $('.owl-item.active' || '.owl-item.cloned.active')
+          switch (imgClass) {
+            case 'team-01-carousel-item-01-hover':
+              hoverOut(viewActive, memoDiv)
+              break
+
+            case 'team-01-carousel-item-02-hover':
+              // $(itemDiv).removeClass();
+              // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-02 text-center img-bg');
+              hoverOut(viewActive, memoDiv)
+              break
+            case 'team-01-carousel-item-03-hover':
+              // $(itemDiv).removeClass();
+              // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-03 text-center img-bg');
+              hoverOut(viewActive, memoDiv)
+              break
+            case 'team-01-carousel-item-04-hover':
+              // $(itemDiv).removeClass();
+              // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-04 text-center img-bg');
+              hoverOut(viewActive, memoDiv)
+              break
+            case 'team-01-carousel-item-05-hover':
+              // $(itemDiv).removeClass();
+              // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-05 text-center img-bg');
+              hoverOut(viewActive, memoDiv)
+              break
+            case 'team-01-carousel-item-06-hover':
+              // $(itemDiv).removeClass();
+              // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-06 text-center img-bg');
+              hoverOut(viewActive, memoDiv)
+              break
+          }
+
+          memoDiv = new Array()
+          idDiv = new Array()
+          itemDiv = ''
+        }
+        else{
         isDrag = false
         var imgClass = evt.currentTarget.classList[1]
         itemDiv = evt.currentTarget
@@ -590,6 +631,7 @@
             hoverIn(viewActive, memoDiv, divA, divB)
             break
         }
+      }
       }, null)
 
       $('.team-carousel').mousedown(function () {
