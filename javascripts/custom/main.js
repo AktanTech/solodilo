@@ -526,6 +526,22 @@
     var isDrag = false
     var cli = 0;
 
+    function hoverOut ($dato, $lista) {
+      for (let i = 0; i < idDiv.length; i++) {
+        var divNone = $dato[i]
+        console.log(divNone);
+        
+        divNone.firstChild.firstElementChild.innerHTML = ''
+        $(`#${idDiv[i]}`).removeClass()
+        $(`#${idDiv[i]}`).addClass($lista[i])
+        $('.team-caps').html('')
+      }
+      $('#team-info').html('')
+      $('#team-info').hide()
+      $('.team-caps').html('')
+      $('.team-caps').hide()
+    }
+
     if ($(window).width() > 600) {
       $('.team-carousel-item').click(function (evt) {
         if (memoDiv.length > 0) {
@@ -621,16 +637,16 @@
             var divB = '<h5>Desde pequeña prefería que me compraran plumones, colores o tijeras en vez de una muñeca. Cuando algo se rompe en mi casa siempre intento repararlo.Soy amante de los animales, tengo tres gatos, tres perros y un pececito llamado Sushi</h5>'
             hoverIn(viewActive, memoDiv, divA, divB)
             break
-          case 'team-01-carousel-item-06':
-            idDiv.push(evt.currentTarget.id)
-            memoDiv.push('team-carousel-item team-01-carousel-item-06 text-center img-bg')
-            $(evt.currentTarget).removeClass()
-            $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-06-hover text-center img-bg-hover disable-owl-swipe')
-            $(evt.currentTarget).css('background-size', 'contain !important')
-            var divA = '<h1>Naomy King</h1><h4>COMMUNITY MANAGER</h4><h3>"Si amas lo que haces, ni los lunes te quitarán tu sonrisa"<br><div><a href="https://www.instagram.com/naomyking/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/naomy.king" target="_blank"><i style="font-size: 2.4rem;" class="fab fa-facebook-f"></i></a></div></h3>'
-            var divB = '<h5>Soy una mujer alegre y divertida que le gusta estar rodeada de buenos amigos y familia. Me gustaría tener mis propios negocios y ser una empresaria exitosa a nivel internacional</h5>'
-            hoverIn(viewActive, memoDiv, divA, divB)
-            break
+          // case 'team-01-carousel-item-06':
+          //   idDiv.push(evt.currentTarget.id)
+          //   memoDiv.push('team-carousel-item team-01-carousel-item-06 text-center img-bg')
+          //   $(evt.currentTarget).removeClass()
+          //   $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-06-hover text-center img-bg-hover disable-owl-swipe')
+          //   $(evt.currentTarget).css('background-size', 'contain !important')
+          //   var divA = '<h1>Naomy King</h1><h4>COMMUNITY MANAGER</h4><h3>"Si amas lo que haces, ni los lunes te quitarán tu sonrisa"<br><div><a href="https://www.instagram.com/naomyking/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/naomy.king" target="_blank"><i style="font-size: 2.4rem;" class="fab fa-facebook-f"></i></a></div></h3>'
+          //   var divB = '<h5>Soy una mujer alegre y divertida que le gusta estar rodeada de buenos amigos y familia. Me gustaría tener mis propios negocios y ser una empresaria exitosa a nivel internacional</h5>'
+          //   hoverIn(viewActive, memoDiv, divA, divB)
+          //   break
         }
       }
       }, null)
@@ -685,11 +701,11 @@
               // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-05 text-center img-bg');
               hoverOut(viewActive, memoDiv)
               break
-            case 'team-01-carousel-item-06-hover':
-              // $(itemDiv).removeClass();
-              // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-06 text-center img-bg');
-              hoverOut(viewActive, memoDiv)
-              break
+            // case 'team-01-carousel-item-06-hover':
+            //   // $(itemDiv).removeClass();
+            //   // $(itemDiv).addClass('team-carousel-item team-01-carousel-item-06 text-center img-bg');
+            //   hoverOut(viewActive, memoDiv)
+            //   break
           }
 
           memoDiv = new Array()
@@ -719,17 +735,6 @@
         }
       }
 
-      function hoverOut ($dato, $lista) {
-        for (let i = 0; i < idDiv.length; i++) {
-          var divNone = $dato[i]
-          divNone.firstChild.firstElementChild.innerHTML = ''
-          $(`#${idDiv[i]}`).removeClass()
-          $(`#${idDiv[i]}`).addClass($lista[i])
-          $('.team-caps').html('')
-        }
-        $('.team-caps').html('')
-        $('.team-caps').hide()
-      }
     } else {
       $('.team-carousel-item').click(function (evt) {        
         cli++;
@@ -737,6 +742,8 @@
         var divEvt = evt.currentTarget.classList[1]
         switch (divEvt) {
           case 'team-01-carousel-item-01':
+            idDiv.push(evt.currentTarget.id)
+            memoDiv.push('team-carousel-item team-01-carousel-item-01 text-center img-bg')
             $(evt.currentTarget).removeClass()
             $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-01-hover text-center img-bg-hover')
             var divA = "<h1>Sindy Tec</h1><h4>CEO Y DIRECTOR CREATIVO</h4><h3>'Al compromiso no le <br>importa como te sientas, <br>¡ve y hazlo!'<br><div><a href='https://www.instagram.com/sindy_teher/?hl=es-la' target='_blank'><i style='font-size: 2rem;' class='fab fa-instagram'></i></a><a href='https://www.facebook.com/Sindy-Teher-293837087909110/' target='_blank'><i style='font-size: 2rem;' class='fab fa-facebook-f'></i></a></div></h3> <br> <h5>Me defino sin filtros, proactiva y terca. Agradecida totalmente de la vida, la oveja creativa de la familia y divertida.</h5>"
@@ -744,6 +751,8 @@
             break
 
           case 'team-01-carousel-item-02':
+            idDiv.push(evt.currentTarget.id)
+            memoDiv.push('team-carousel-item team-01-carousel-item-02 text-center img-bg')
             $(evt.currentTarget).removeClass()
             $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-02-hover text-center img-bg-hover')
             var divA = '<h1>Alejandro Valera</h1><h4>SOCIO EJECUTIVO</h4><h3>"Encuentra una manera de resolverlo, osea ¡SOLUCIÓNALO!"<br><div><a href="https://www.instagram.com/alejandrovalera__/?hl=es-la" target="_blank"><i style="font-size: 2rem;" class="fab fa-instagram"></i></a><a href="https://www.facebook.com/Alejandro-Valera-2237305619837723/" target="_blank"><i style="font-size: 2rem;" class="fab fa-facebook-f"></i></a></div></h3><br> <h5>Soy una persona auténtica, que te dice la verdad, me encanta el trato con la gente e ir por retos nuevos para cumplir con mi mision</h5>'
@@ -751,6 +760,8 @@
             break
 
           case 'team-01-carousel-item-03':
+            idDiv.push(evt.currentTarget.id)
+            memoDiv.push('team-carousel-item team-01-carousel-item-03 text-center img-bg')
             $(evt.currentTarget).removeClass()
             $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-03-hover text-center img-bg-hover')
             var divA = '<h1>Alex Zapata</h1><h4>JEFE DE PRODUCCION</h4><h3>"No estoy loco soy mentalmente divertido"<br><div><a href="https://www.instagram.com/aljozaso/?hl=es-la" target="_blank"><i style="font-size: 2rem;" class="fab fa-instagram"></i></a><a href="https://www.facebook.com/aljozaso" target="_blank"><i style="font-size: 2rem;" class="fab fa-facebook-f"></i></a></div></h3> <br> <h5>Soy un hombre divertido, creativo, amiguero, empático, soñador. La vida me ha dado la fortuna rodearme de gente que me ama. Amante de los deportes y el cine.</h5>'
@@ -758,6 +769,8 @@
             break
 
           case 'team-01-carousel-item-04':
+            idDiv.push(evt.currentTarget.id)
+            memoDiv.push('team-carousel-item team-01-carousel-item-05 text-center img-bg')
             $(evt.currentTarget).removeClass()
             $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-04-hover text-center img-bg-hover')
             var divA = '<h1>Armando Carvajal & Victor Perera</h1><h4>DESARROLLO WEB</h4><h3>"Siempre innovando y hacia adelante"<br><div><a href="https://www.instagram.com/armando.carvajal.142/?hl=es-la" target="_blank"><i style="font-size: 2rem;" class="fab fa-instagram"></i></a><a href="https://www.facebook.com/armando.carvajal.142" target="_blank"><i style="font-size: 2rem;" class="fab fa-facebook-f"></i></a></div></h3> <br> <h5>Una pareja profesional y única con extensos conocimientos de programación, gestión de proyectos de software y diseño web. Amantes de la tecnología y de los retos</h5><h3><br><div><a href="https://www.instagram.com/vic_rpr/" target="_blank"><i style="font-size: 2rem;" class="fab fa-instagram"></i></a><a href="https://www.facebook.com/victor.raul2" target="_blank"><i style="font-size: 2rem;" class="fab fa-facebook-f"></i></a></div></h3>'
@@ -765,23 +778,25 @@
             break
 
           case 'team-01-carousel-item-05':
+            idDiv.push(evt.currentTarget.id)
+            memoDiv.push('team-carousel-item team-01-carousel-item-06 text-center img-bg')
             $(evt.currentTarget).removeClass()
             $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-05-hover text-center img-bg-hover')
             var divA = '<h1>Mariel Alvizo</h1><h4>DISEÑADORA</h4><h3>"Diseñando la vida es más sabrosa"<br><div><a href="https://www.instagram.com/marie_alvizo/" target="_blank"><i style="font-size: 2rem;" class="fab fa-instagram"></i></a><a href="https://www.facebook.com/mariel.alvizoperera" target="_blank"><i style="font-size: 2rem;" class="fab fa-facebook-f"></i></a></div></h3> <br> <h5>Desde pequeña prefería que me compraran plumones, colores o tijeras en vez de una muñeca. Cuando algo se rompe en mi casa siempre intento repararlo.Soy amante de los animales, tengo tres gatos, tres perros y un pececito llamado Sushi</h5>'
             $('#team-info').html(divA)
             break
 
-          case 'team-01-carousel-item-06':
-            $(evt.currentTarget).removeClass()
-            $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-06-hover text-center img-bg-hover')
-            var divA = '<h1>Naomy King</h1><h4>COMMUNITY MANAGER</h4><h3>"Si amas lo que haces, ni los lunes te quitarán tu sonrisa"<br><div><a href="https://www.instagram.com/naomyking/" target="_blank"><i style="font-size: 2rem;" class="fab fa-instagram"></i></a><a href="https://www.facebook.com/naomy.king" target="_blank"><i style="font-size: 2rem;" class="fab fa-facebook-f"></i></a></div></h3> <br> <h5>Soy una mujer alegre y divertida que le gusta estar rodeada de buenos amigos y familia. Me gustaría tener mis propios negocios y ser una empresaria exitosa a nivel internacional</h5>'
-            $('#team-info').html(divA)
-            break
+          // case 'team-01-carousel-item-06':
+          //   $(evt.currentTarget).removeClass()
+          //   $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-06-hover text-center img-bg-hover')
+          //   var divA = '<h1>Naomy King</h1><h4>COMMUNITY MANAGER</h4><h3>"Si amas lo que haces, ni los lunes te quitarán tu sonrisa"<br><div><a href="https://www.instagram.com/naomyking/" target="_blank"><i style="font-size: 2rem;" class="fab fa-instagram"></i></a><a href="https://www.facebook.com/naomy.king" target="_blank"><i style="font-size: 2rem;" class="fab fa-facebook-f"></i></a></div></h3> <br> <h5>Soy una mujer alegre y divertida que le gusta estar rodeada de buenos amigos y familia. Me gustaría tener mis propios negocios y ser una empresaria exitosa a nivel internacional</h5>'
+          //   $('#team-info').html(divA)
+          //   break
         }
         $('#team-info').show(1000)
       }
       else{
-        var divEvt = evt.currentTarget.classList[1]
+        var divEvt = evt.currentTarget.classList[1]        
         switch (divEvt) {
           case 'team-01-carousel-item-01-hover':
             $(evt.currentTarget).removeClass()
@@ -804,16 +819,39 @@
             $(evt.currentTarget).removeClass()
             $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-05 text-center img-bg')
             break
-          case 'team-01-carousel-item-06-hover':
-            $(evt.currentTarget).removeClass()
-            $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-06 text-center img-bg')
-            break
+          // case 'team-01-carousel-item-06-hover':
+          //   $(evt.currentTarget).removeClass()
+          //   $(evt.currentTarget).addClass('team-carousel-item team-01-carousel-item-06 text-center img-bg')
+          //   break
         }
         $('#team-info').html('')
         $('#team-info').hide()
+        memoDiv = new Array()
         cli = 0;
       }       
       })
+
+      $(".team-carousel-item").bind("touchmove", function(e) {
+        isDrag = true
+        var wasDragging = isDrag
+        isDrag = false
+        if (wasDragging && cli==1) {          
+          var viewActive = $('.owl-item.active' || '.owl-item.cloned.active')
+          hoverOut(viewActive, memoDiv)
+          memoDiv = new Array()
+          idDiv = new Array()
+          itemDiv = ''
+          cli = 0;
+          console.log("Exito");
+          
+        }
+        
+      })
+      // $(".team-carousel-item").bind("touchend", function(e) {
+        
+      // // })
+        
+      // })
     }
   })
   // $(function ($)  : ends
