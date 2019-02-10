@@ -1,0 +1,130 @@
+/* MAIN-BG.CSS contains Background Image paths & definition rules powered by CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.stats-bg {
+    background-image: url('../images/bg/06.jpg');
+}
+
+.contact-bg {
+    background-image: url('../images/imagenes_prueba_final/IMG_5294 2.jpg');
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.team-01-carousel-item-01 {
+    background-image: url('../images/Equipo/Equipo-Final/Sindy.png');
+}
+
+.team-01-carousel-item-02 {
+    background-image: url('../images/Equipo/Equipo-Final/AV.png');
+}
+
+.team-01-carousel-item-03 {
+    background-image: url('../images/Equipo/Equipo-Final/AlexZ.png');
+}
+
+.team-01-carousel-item-04 {
+    background-image: url('../images/Equipo/Equipo-Final/ChicosWeb.png');
+}
+
+.team-01-carousel-item-05 {
+    background-image: url('../images/Equipo/Equipo-Final/Mariel.png');
+}
+
+.team-01-carousel-item-06 {
+    background-image: url('../images/Equipo/Equipo-Final/Nao.png');
+}
+.team-01-carousel-item-01-hover {
+    background-image: url('../images/Equipo/Equipo/Fondo/Sindy2.png');
+}
+
+.team-01-carousel-item-02-hover {
+    background-image: url('../images/Equipo/Equipo/Fondo/Alex1.png');
+}
+.team-01-carousel-item-03-hover {
+    background-image: url('../images/Equipo/Equipo/Sin_fondo/Zapata2.1.png');
+}
+.team-01-carousel-item-04-hover {
+    background-image: url('../images/Equipo/Equipo/Fondo/A_V2.png');
+    background-size: contain !important;
+}
+
+.team-01-carousel-item-05-hover {
+    background-image: url('../images/Equipo/Equipo-Final/Mariel2.png');
+}
+
+.team-01-carousel-item-06-hover {
+    background-image: url('../images/Equipo/Equipo-Final/Nao2.png');
+}
+
+@media(max-width:600px){
+    .team-01-carousel-item-01-hover {
+        background-image: url('../images/Equipo/Equipo/Fondo/Sindy2.png');
+        background-size: 110% !important;
+    }
+    
+    .team-01-carousel-item-02-hover {
+        background-image: url('../images/Equipo/Equipo/Fondo/Alex1.png');
+        background-size: 110% !important;
+    }
+    .team-01-carousel-item-03-hover {
+        background-image: url('../images/Equipo/Equipo/Sin_fondo/Zapata2.1.png');
+        background-size: 110% !important;
+    }
+    .team-01-carousel-item-04-hover {
+        background-image: url('../images/Equipo/Equipo/Fondo/A_V2.png');
+        background-size: contain !important;
+    }
+    
+    .team-01-carousel-item-05-hover {
+        background-image: url('../images/Equipo/Equipo-Final/Mariel2.png');
+        background-size: 85% !important;
+    }
+    
+    .team-01-carousel-item-06-hover {
+        background-image: url('../images/Equipo/Equipo-Final/Nao2.png');
+        background-size: 85% !important;
+    }   
+}
+/* 
+.team-01-carousel-item-02-hover {
+    background-image: url('../images/Equipo/Equipo/Sin_fondo/Sindy2.png');
+}
+
+.team-01-carousel-item-03 {
+    background-image: url('../images/Equipo/Equipo/Sin_fondo/Alex1.png');
+}
+
+.team-01-carousel-item-04 {
+    background-image: url('../images/Equipo/Equipo/Sin_fondo/Zapata2.1.png');
+}
+
+.team-01-carousel-item-05 {
+    background-image: url('../images/Equipo/Equipo/Sin_fondo/A_V2.png');
+} */
+
+.project-01-carousel-item-01 {
+    background-image: url('../images/project/project01/01.jpg');
+}
+
+.project-01-carousel-item-02 {
+    background-image: url('../images/project/project01/02.jpg');
+}
+
+.project-01-carousel-item-03 {
+    background-image: url('../images/project/project01/03.jpg');
+}
+
+.parallax-showcase-01 {
+    background-image: url('../images/featured/01.jpg');
+}
+
+.parallax-showcase-02 {
+    background-image: url('../images/featured/02.jpg');
+}
+
+.parallax-showcase-03 {
+    background-image: url('../images/featured/03.jpg');
+}
