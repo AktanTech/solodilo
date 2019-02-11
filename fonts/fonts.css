@@ -1,0 +1,207 @@
+/*FONTS.CSS*/
+/*------------------------------------------------------------------------------------*/
+/* Author: Designova.*/
+/* Website: http://www.Designova.net */
+/* Copyright: (C) 2015 */
+
+/* IMPORTANT NOTICE: */
+/*Some fonts used in this template are Premium Fonts with Special Extended License to Designova. As a buyer of this template you can use these fonts as part of the web template but you shoud not redistribute or resell the fonts by any means */
+/*-------------------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*1. SINKIN SANS FONT */
+/*-------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'RNS-Sanz';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Medium';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Sbold';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Bold';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RNS-Sanz-Light';
+    src: url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.woff') format('woff'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.woff2') format('woff2'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.eot') format('embedded-opentype'),
+         url('rns-sanz/RNS_Sanz-WEB/All/RNSSanz-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Lorin';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lorin_bold';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lorin_light';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lorin_extraBold';
+    src: url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.woff') format('woff'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.woff2') format('woff2'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.eot') format('embedded-opentype'),
+         url('lorin-font/lorin-modern-font/Web-Fonts/Lorin-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Caviar';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Caviar_bold';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Caviar_italic';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Caviar_bitalic';
+    src: url('./caviar_dreams/caviar_dreams/CaviarDreams_BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face{
+    font-family: 'Pistara';
+    src: url('./pistara/pistara/Pistara.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AceSans_black';
+    src: url('AceSans/WOFF/AceSansBlack.woff') format('woff'),
+         url('AceSans/OTF/AceSans-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AceSans_bold';
+    src: url('AceSans/WOFF/AceSansBold.woff') format('woff'),
+         url('AceSans/OTF/AceSans-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AceSans_xbold';
+    src: url('AceSans/WOFF/AceSansExtrabold.woff') format('woff'),
+         url('AceSans/OTF/AceSans-Extrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AceSans_regular';
+    src: url('AceSans/WOFF/AceSansRegular.woff') format('woff'),
+         url('AceSans/OTF/AceSans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AceSans_light';
+    src: url('AceSans/WOFF/AceSansLight.woff') format('woff'),
+         url('AceSans/OTF/AceSans-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AceSans_xlight';
+    src: url('AceSans/WOFF/AceSansExtralight.woff') format('woff'),
+         url('AceSans/OTF/AceSans-Extralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AceSans_medium';
+    src: url('AceSans/WOFF/AceSansMedium.woff') format('woff'),
+         url('AceSans/OTF/AceSans-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AceSans_thin';
+    src: url('AceSans/WOFF/AceSansThin.woff') format('woff'),
+         url('AceSans/OTF/AceSans-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-------------------------------------------------------------------------------------*/
+/* YOUR CUSTOM FONTS CAN BE DEFINED HERE VIA CSS3 FONT-FACE TECHNOLOGY*/
+/* More info : http://css-tricks.com/snippets/css/using-font-face/ */
+/*-------------------------------------------------------------------------------------*/
